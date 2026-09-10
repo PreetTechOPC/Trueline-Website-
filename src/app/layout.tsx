@@ -13,7 +13,7 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  title: "Trueline Estates",
+  title: "Trueline Real Estate",
   description: "Trueline Real Estate Portal",
 };
 
