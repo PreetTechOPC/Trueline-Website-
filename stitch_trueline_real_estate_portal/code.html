@@ -1,0 +1,883 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" rel="stylesheet"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&amp;family=Montserrat:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={darkMode:"class",theme:{extend:{colors:{"surface-bright":"#2e3857","inverse-on-surface":"#262f4d","surface-tint":"#f0c04a","primary":"#f6c54f","tertiary-fixed-dim":"#bac3ff","on-primary-fixed-variant":"#5b4300","on-surface":"#dbe1ff","surface-container":"#141e3b","outline-variant":"#4e4635","on-surface-variant":"#d2c5af","secondary-container":"#b28b18","on-error-container":"#ffdad6","on-secondary-fixed":"#251a00","surface":"#07122e","error-container":"#93000a","surface-container-highest":"#2a3452","tertiary-container":"#9cabff","primary-container":"#d8aa36","on-tertiary":"#00208d","on-primary-container":"#564000","on-error":"#690005","on-secondary":"#3e2e00","inverse-surface":"#dbe1ff","on-tertiary-fixed":"#001159","on-secondary-fixed-variant":"#594400","error":"#ffb4ab","on-tertiary-fixed-variant":"#213aa9","secondary-fixed-dim":"#edc14d","surface-dim":"#07122e","outline":"#9a8f7c","on-background":"#dbe1ff","on-primary":"#3f2e00","tertiary":"#c1c9ff","secondary":"#edc14d","surface-container-low":"#101a37","on-tertiary-container":"#1c36a6","surface-variant":"#2a3452","on-secondary-container":"#362800","secondary-fixed":"#ffdf95","inverse-primary":"#785a00","background":"#07122e","surface-container-lowest":"#030c29","primary-fixed":"#ffdf9b","on-primary-fixed":"#251a00","primary-fixed-dim":"#f0c04a","tertiary-fixed":"#dee1ff","surface-container-high":"#1f2946"},borderRadius:{"DEFAULT":"0.25rem","lg":"0.5rem","xl":"0.75rem","full":"9999px"},spacing:{"lg":"1.5rem","margin-tablet":"3rem","sm":"0.75rem","margin-mobile":"1.25rem","md":"1rem","gutter-mobile":"1rem","xl":"2rem","3xl":"4.5rem","5xl":"8rem","xs":"0.5rem","gutter-desktop":"3rem","gutter-tablet":"2rem","4xl":"6rem","xxs":"0.25rem","margin-desktop":"5rem","2xl":"3rem"},fontFamily:{"label-md":["Inter"],"headline-xl-mobile":["Montserrat"],"display":["Montserrat"],"headline-lg":["Montserrat"],"body-sm":["Inter"],"body-xl":["Inter"],"headline-xl":["Montserrat"],"body-lg":["Inter"],"headline-md":["Montserrat"],"body-md":["Inter"],"display-mobile":["Montserrat"],"label-caps":["Montserrat"],"label-sm":["Inter"],"headline-sm":["Montserrat"],"headline-lg-mobile":["Montserrat"]},fontSize:{"label-md":["0.875rem",{"lineHeight":"1.25rem","letterSpacing":"0.02em","fontWeight":"500"}],"headline-xl-mobile":["2.25rem",{"lineHeight":"2.75rem","letterSpacing":"-0.01em","fontWeight":"500"}],"display":["4.5rem",{"lineHeight":"5rem","letterSpacing":"-0.03em","fontWeight":"600"}],"headline-lg":["2.25rem",{"lineHeight":"2.75rem","letterSpacing":"-0.01em","fontWeight":"500"}],"body-sm":["0.875rem",{"lineHeight":"1.4rem","letterSpacing":"0.01em","fontWeight":"400"}],"body-xl":["1.25rem",{"lineHeight":"2rem","letterSpacing":"-0.01em","fontWeight":"300"}],"headline-xl":["3.25rem",{"lineHeight":"3.75rem","letterSpacing":"-0.02em","fontWeight":"500"}],"body-lg":["1.125rem",{"lineHeight":"1.85rem","letterSpacing":"0em","fontWeight":"300"}],"headline-md":["1.5rem",{"lineHeight":"2rem","letterSpacing":"0.01em","fontWeight":"500"}],"body-md":["1rem",{"lineHeight":"1.65rem","letterSpacing":"0.01em","fontWeight":"400"}],"display-mobile":["2.75rem",{"lineHeight":"3.25rem","letterSpacing":"-0.02em","fontWeight":"600"}],"label-caps":["0.75rem",{"lineHeight":"1rem","letterSpacing":"0.18em","fontWeight":"600"}],"label-sm":["0.75rem",{"lineHeight":"1rem","letterSpacing":"0.04em","fontWeight":"500"}],"headline-sm":["1.25rem",{"lineHeight":"1.75rem","letterSpacing":"0.02em","fontWeight":"500"}],"headline-lg-mobile":["1.75rem",{"lineHeight":"2.25rem","letterSpacing":"0em","fontWeight":"500"}]}}}}</script></head><body class="bg-background font-body-md text-on-surface antialiased selection:bg-primary selection:text-on-primary"><header class="fixed top-0 w-full z-50 bg-surface/80 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="h-20 max-w-[1600px] mx-auto px-margin-mobile md:px-margin-tablet lg:px-margin-desktop flex items-center justify-between"><a class="flex items-center gap-xs" data-path="portfolio" href="#"><span class="font-headline-sm text-headline-sm uppercase text-on-surface tracking-widest font-semibold">Trueline</span><span class="font-label-caps text-label-caps uppercase text-primary tracking-widest">Estates</span></a><nav class="hidden lg:flex items-center gap-xl" data-active-classes="text-primary font-semibold"><a aria-current="page" class="uppercase transition-colors text-primary font-semibold" data-path="portfolio" href="#">Portfolio</a><a class="font-label-caps text-label-caps uppercase text-on-surface-variant hover:text-on-surface transition-colors" data-path="developments" href="#">Developments</a><a class="font-label-caps text-label-caps uppercase text-on-surface-variant hover:text-on-surface transition-colors" data-path="advisory" href="#">Advisory</a><a class="font-label-caps text-label-caps uppercase text-on-surface-variant hover:text-on-surface transition-colors" data-path="private-office" href="#">Private Office</a><a class="font-label-caps text-label-caps uppercase text-on-surface-variant hover:text-on-surface transition-colors" data-path="contact" href="#">Contact</a></nav><div class="flex items-center gap-md"><a class="hidden sm:inline-flex items-center justify-center bg-primary text-on-primary font-label-caps text-label-caps uppercase px-lg py-sm transition-all duration-300 hover:bg-primary-fixed-dim hover:tracking-widest" data-path="schedule-consultation" href="#">Schedule Consultation</a><img alt="Profile" class="w-8 h-8 rounded-full object-cover" src="https://lh3.googleusercontent.com/aida/AEtjO1WzVfOTTLhJ9yJwUaGPp2tYf5k6gQOpjSqN3M5Xdou3UOYMtlfIrJC5ydtvVrlv5YzT3chGsKt8j7E6YXPYprrcklgoqst265KY74aXvCAy82_q861Pm1v_qTHT5eSEJcvubi7vsDJdQSRrVBZyWEHNNfNZgqr5a9GMhE_uFpVPZ0QoFotdVbvbTTN6itlknfPmsE8fUqaQNnX01hkVXeI5lUJgZrdPPC6YAYbVFOGssHUHCTmqAMi3xoWwAJJQC6eepjKdXTdiqZw"/></div></div></header><main class="w-full pt-20 bg-background"><div class="flex flex-col w-full text-on-surface bg-background select-none">
+<!-- TOP CONTACT & UTILITY BAR (matching screenshot header style) -->
+<section class="w-full bg-surface-container-lowest/90 border-b border-primary/20 backdrop-blur-md px-margin-mobile md:px-margin-tablet lg:px-margin-desktop py-xs z-30">
+<div class="max-w-[1600px] mx-auto flex flex-wrap items-center justify-between gap-sm text-on-surface-variant font-label-sm text-label-sm">
+<div class="flex items-center gap-lg">
+<a class="flex items-center gap-xxs hover:text-primary transition-colors" href="tel:+97143128800">
+<span class="material-symbols-outlined text-primary text-[1rem]">call</span>
+<span>+971 4 312 8800</span>
+</a>
+<a class="flex items-center gap-xxs hover:text-primary transition-colors" href="https://wa.me/97143128800">
+<span class="material-symbols-outlined text-primary text-[1rem]">chat</span>
+<span>WhatsApp Sovereign Desk</span>
+</a>
+<div class="hidden sm:flex items-center gap-xxs">
+<span class="material-symbols-outlined text-primary text-[1rem]">location_on</span>
+<span>Dubai DIFC • Abu Dhabi • London</span>
+</div>
+</div>
+<div class="flex items-center gap-md">
+<span class="hidden md:inline uppercase text-primary tracking-widest font-semibold text-[0.65rem]">Licensed RICS Brokerage</span>
+<div class="flex items-center gap-xs text-on-surface-variant">
+<span class="material-symbols-outlined hover:text-primary cursor-pointer text-[1.1rem]">public</span>
+<span class="material-symbols-outlined hover:text-primary cursor-pointer text-[1.1rem]">share</span>
+<span class="material-symbols-outlined hover:text-primary cursor-pointer text-[1.1rem]">shield</span>
+</div>
+</div>
+</div>
+</section>
+<!-- HERO SECTION: High-impact dark atmospheric visual with search engine bar -->
+<section class="relative w-full min-h-[780px] lg:min-h-[860px] flex items-center justify-center overflow-hidden -mt-20 pt-20">
+<!-- Ambient glowing fire & midnight architectural backdrop -->
+<div class="absolute inset-0 bg-cover bg-center transition-transform duration-1000 scale-105" data-alt="Dramatic nocturnal cinematic photograph of an ultra luxury penthouse fire-pit terrace overlooking the glowing illuminated skyline of Dubai at dusk, embers of golden warmth swirling into deep midnight blue ambient sky, rich shadows, moody high contrast architectural opulence" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuC_ZCFvhva9hAJDSYWjMFGOYL8Vkd5PEDaMBBy8Lkr4wyXlXTASdeutEDzW3sF46j-V4EuMy2oBkex_JckO_ttcVafk0Dzw6ZCudGwEKY1N9XBa8v-_FyH6npJNOTnrehA04JUwL6a9Ng5S4ogKTwsjEA3r6COFq6kKy8GPt_MuaxL9h69Yq1eObSwr6CQm8mML5lA5cdM4ncena724Ar0OLvMRctYQ20pXqUsNuE3xt1LE4gW4LVyFbA')">
+</div>
+<div class="absolute inset-0 bg-gradient-to-b from-background/90 via-background/60 to-background"></div>
+<div class="absolute inset-0 bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-primary/10 via-transparent to-surface-container-lowest/90"></div>
+<div class="relative z-10 w-full max-w-[1600px] mx-auto px-margin-mobile md:px-margin-tablet lg:px-margin-desktop py-3xl flex flex-col items-center text-center">
+<!-- Subtle top badge -->
+<div class="inline-flex items-center gap-xs px-md py-xxs bg-surface-container-high/80 border border-primary/30 backdrop-blur-md mb-md">
+<span class="w-1.5 h-1.5 bg-primary rounded-full animate-pulse"></span>
+<span class="font-label-caps text-label-caps uppercase tracking-[0.25em] text-primary">Sovereign &amp; Institutional Acquisitions</span>
+</div>
+<!-- Hero Headline & Subheading (Matching Image 9) -->
+<h1 class="font-display text-display-mobile md:text-display font-bold text-on-surface tracking-tight max-w-5xl">
+        Your Dream Home <span class="font-serif italic font-normal text-primary">Awaits</span>
+</h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-2xl mt-sm mb-2xl">
+        The Journey To Modern Sovereign Living Starts Here At Trueline Estates.
+      </p>
+<!-- Advanced Luxury Search Filter Panel (Matching Image 9 structure) -->
+<div class="w-full max-w-5xl bg-surface-container/85 border border-primary/25 backdrop-blur-2xl shadow-[0_20px_60px_rgba(0,0,0,0.6)] p-md md:p-lg">
+<!-- Filter Tabs -->
+<div class="flex items-center justify-start sm:justify-center gap-xs border-b border-outline-variant/30 pb-md mb-md overflow-x-auto" id="search-tabs">
+<button class="search-tab-btn active px-lg py-xs font-label-caps text-label-caps uppercase tracking-wider bg-primary text-on-primary font-semibold transition-all" type="button">
+            Buy
+          </button>
+<button class="search-tab-btn px-lg py-xs font-label-caps text-label-caps uppercase tracking-wider bg-surface-container-high text-on-surface hover:bg-primary/20 transition-all" type="button">
+            Rent
+          </button>
+<button class="search-tab-btn px-lg py-xs font-label-caps text-label-caps uppercase tracking-wider bg-surface-container-high text-on-surface hover:bg-primary/20 transition-all" type="button">
+            Off Plan
+          </button>
+<button class="search-tab-btn px-lg py-xs font-label-caps text-label-caps uppercase tracking-wider bg-surface-container-high text-on-surface hover:bg-primary/20 transition-all" type="button">
+            Commercial
+          </button>
+</div>
+<!-- Filter Controls Form -->
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-6 gap-sm items-center">
+<!-- Location Input -->
+<div class="lg:col-span-2 relative flex items-center bg-surface-container-lowest border border-outline-variant/50 focus-within:border-primary transition-colors">
+<span class="material-symbols-outlined text-primary ml-sm text-[1.2rem]">location_on</span>
+<input class="w-full bg-transparent px-sm py-sm text-on-surface font-body-sm text-body-sm focus:outline-none placeholder:text-on-surface-variant/60" placeholder="Search Community or Landmark" type="text" value="Palm Jumeirah, Dubai"/>
+</div>
+<!-- Price Range Dropdown -->
+<div class="relative bg-surface-container-lowest border border-outline-variant/50">
+<select class="w-full bg-transparent text-on-surface font-body-sm text-body-sm px-sm py-sm focus:outline-none cursor-pointer appearance-none">
+<option class="bg-surface-container-high text-on-surface" value="">Price (All)</option>
+<option class="bg-surface-container-high text-on-surface" value="1">AED 2M - 5M</option>
+<option class="bg-surface-container-high text-on-surface" selected="" value="2">AED 5M - 15M</option>
+<option class="bg-surface-container-high text-on-surface" value="3">AED 15M - 40M</option>
+<option class="bg-surface-container-high text-on-surface" value="4">AED 40M+</option>
+</select>
+<span class="material-symbols-outlined absolute right-sm top-1/2 -translate-y-1/2 text-primary pointer-events-none text-[1.1rem]">expand_more</span>
+</div>
+<!-- Beds & Baths Dropdown -->
+<div class="relative bg-surface-container-lowest border border-outline-variant/50">
+<select class="w-full bg-transparent text-on-surface font-body-sm text-body-sm px-sm py-sm focus:outline-none cursor-pointer appearance-none">
+<option class="bg-surface-container-high text-on-surface" value="">Beds &amp; Baths</option>
+<option class="bg-surface-container-high text-on-surface" value="1">1 - 2 Bedrooms</option>
+<option class="bg-surface-container-high text-on-surface" value="2">3 - 4 Bedrooms</option>
+<option class="bg-surface-container-high text-on-surface" selected="" value="3">5+ Bedrooms</option>
+<option class="bg-surface-container-high text-on-surface" value="penthouse">Penthouses</option>
+</select>
+<span class="material-symbols-outlined absolute right-sm top-1/2 -translate-y-1/2 text-primary pointer-events-none text-[1.1rem]">expand_more</span>
+</div>
+<!-- Property Type Dropdown -->
+<div class="relative bg-surface-container-lowest border border-outline-variant/50">
+<select class="w-full bg-transparent text-on-surface font-body-sm text-body-sm px-sm py-sm focus:outline-none cursor-pointer appearance-none">
+<option class="bg-surface-container-high text-on-surface" value="">Property Type</option>
+<option class="bg-surface-container-high text-on-surface" selected="" value="villa">Sky Villa</option>
+<option class="bg-surface-container-high text-on-surface" value="mansion">Waterfront Mansion</option>
+<option class="bg-surface-container-high text-on-surface" value="penthouse">Duplex Penthouse</option>
+<option class="bg-surface-container-high text-on-surface" value="island">Private Island</option>
+</select>
+<span class="material-symbols-outlined absolute right-sm top-1/2 -translate-y-1/2 text-primary pointer-events-none text-[1.1rem]">expand_more</span>
+</div>
+<!-- Submit CTA -->
+<div class="w-full">
+<button class="w-full bg-primary text-on-primary font-label-caps text-label-caps uppercase py-sm font-semibold tracking-widest hover:bg-primary-fixed-dim active:scale-[0.99] transition-all flex items-center justify-center gap-xs">
+<span class="material-symbols-outlined text-[1.1rem]">search</span>
+<span>Find Properties</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- TICKER MARQUEE / SOVEREIGN TAXONOMY STRIP (matching bottom banner of Image 9) -->
+<div class="w-full bg-surface-container-lowest border-y border-primary/20 py-sm overflow-hidden flex items-center">
+<div class="flex items-center gap-xl whitespace-nowrap animate-[marquee_30s_linear_infinite] font-label-caps text-label-caps uppercase tracking-[0.2em] text-on-surface-variant">
+<span class="flex items-center gap-sm"><span class="text-primary font-bold">/</span> WATERFRONT VILLAS</span>
+<span class="flex items-center gap-sm"><span class="text-primary font-bold">/</span> INSTITUTIONAL INVESTMENTS</span>
+<span class="flex items-center gap-sm"><span class="text-primary font-bold">/</span> COMMERCIAL &amp; OFF-PLAN HUBS</span>
+<span class="flex items-center gap-sm"><span class="text-primary font-bold">/</span> PRIME PENTHOUSES &amp; SKY MANSIONS</span>
+<span class="flex items-center gap-sm"><span class="text-primary font-bold">/</span> PRIVATE SOVEREIGN ISLANDS</span>
+<span class="flex items-center gap-sm"><span class="text-primary font-bold">/</span> ADVISORY ACQUISITION</span>
+<span class="flex items-center gap-sm"><span class="text-primary font-bold">/</span> WATERFRONT VILLAS</span>
+<span class="flex items-center gap-sm"><span class="text-primary font-bold">/</span> INSTITUTIONAL INVESTMENTS</span>
+<span class="flex items-center gap-sm"><span class="text-primary font-bold">/</span> COMMERCIAL &amp; OFF-PLAN HUBS</span>
+</div>
+</div>
+<!-- SECTION: "TRUSTED PARTNERS / REGIONAL HUBS" (matching Image 8 layout) -->
+<section class="relative w-full py-4xl overflow-hidden bg-surface">
+<!-- Huge architectural background typography watermark -->
+<div class="absolute top-6 left-1/2 -translate-x-1/2 font-headline-xl text-[6rem] md:text-[10rem] lg:text-[13rem] font-extrabold uppercase text-surface-container-highest/20 tracking-tighter pointer-events-none select-none whitespace-nowrap">
+      TRUSTED PARTNERS
+    </div>
+<div class="relative z-10 max-w-[1600px] mx-auto px-margin-mobile md:px-margin-tablet lg:px-margin-desktop">
+<div class="text-center max-w-4xl mx-auto mb-3xl">
+<h2 class="font-headline-lg text-headline-lg uppercase font-semibold text-on-surface tracking-wide">
+          YOUR TRUSTED REAL ESTATE <span class="text-primary">PARTNERS</span>
+</h2>
+<p class="font-body-md text-body-md text-on-surface-variant mt-sm">
+          Looking for the perfect landmark residence or strategic portfolio acquisition in the UAE and premier global financial capitals? Trueline Real Estate specializes in identifying, acquiring, and structuring prime and ultra-prime assets across Dubai, Abu Dhabi, London, and New York.
+        </p>
+</div>
+<!-- Regional Hubs Showcase: Multi-panel interactive accordion cards (Matching visual in Image 8) -->
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-md h-[520px]">
+<!-- Dubai Hub (Prominent wide expanded card) -->
+<div class="lg:col-span-7 relative h-full group overflow-hidden border border-primary/30 bg-surface-container">
+<div class="absolute inset-0 bg-cover bg-center transition-transform duration-700 group-hover:scale-105" data-alt="Dusk panoramic view of Dubai canal skyline with Burj Khalifa and modern skyscrapers reflecting in turquoise blue water, vibrant amber sunset glowing across futuristic glass towers" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuA-bB4YdkiEl5cEtTSbZo89lfXsVNxnfojeD4tBxVDcB4-3Bj5fKYRZtSMxUv_FPRS0SIel_OeXqQC-D2uWYMVrVJ2xli6AgF96RP8Velma9JyoLgoi9M3h4T6pc7P5glor5u__CMbdVT0Zp6wSPg42Xi831SEU39pc1s2zf-c4zKkyLMzKGCpmNG3wqU1wKFsnUVWkw1Nw7oE4nwW7peTzUSPQEbV-8RbLog2IDzATSr5ZPd6F11aBbw')">
+</div>
+<div class="absolute inset-0 bg-gradient-to-t from-surface-container-lowest via-surface-container-lowest/30 to-transparent"></div>
+<div class="absolute bottom-0 left-0 p-xl flex flex-col items-start">
+<span class="px-sm py-xxs bg-primary text-on-primary font-label-caps text-label-caps uppercase font-semibold mb-xs">Principal UAE Hub</span>
+<h3 class="font-headline-md text-headline-md font-bold text-on-surface uppercase">Dubai</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant max-w-md mt-xs hidden sm:block">
+              Downtown, Palm Jumeirah, DIFC &amp; Emirates Hills. Access exclusive confidential off-market allocations.
+            </p>
+<a class="inline-flex items-center gap-xs font-label-caps text-label-caps uppercase text-primary mt-sm group-hover:translate-x-1 transition-transform" href="#">
+<span>Explore 140+ Dubai Holdings</span>
+<span class="material-symbols-outlined text-[1rem]">arrow_forward</span>
+</a>
+</div>
+</div>
+<!-- Abu Dhabi Hub (Sleek vertical tower card) -->
+<div class="lg:col-span-3 relative h-full group overflow-hidden border border-outline-variant/30 bg-surface-container">
+<div class="absolute inset-0 bg-cover bg-center grayscale group-hover:grayscale-0 transition-all duration-700 group-hover:scale-105" data-alt="Black and white modern architectural photography of Saadiyat Island and Al Maryah financial towers in Abu Dhabi, soaring geometry against dramatic sky" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuBIcyOEhpT2q15E7lB_SgHVH3RMxHTQnZ5gj4FB9xrd2CsyQuVz8f2-s56W4Q2XxdIG47YukP2GRDpYnIfMv4RsbH3EFa9LDsw4JMOzdaqRJO7g7deO6yPk4N2kQwY4MvRA7Hqvgb7QUweBi0UReH11upzMQ_tb9OPaKTkTykvqJQWsii_mmj1OJhBXY8GrNki8HsxR_Yo_Ht7_rizfCIQ4QBEFVwWL1qx5MTKrYO3e7H6OfZJm-PX0vA')">
+</div>
+<div class="absolute inset-0 bg-gradient-to-t from-surface-container-lowest via-surface-container-lowest/40 to-transparent"></div>
+<div class="absolute bottom-0 left-0 p-lg flex flex-col items-start">
+<span class="px-sm py-xxs bg-surface-container-highest text-on-surface-variant font-label-caps text-label-caps uppercase font-semibold mb-xs">Capital Hub</span>
+<h3 class="font-headline-sm text-headline-sm font-bold text-on-surface uppercase">Abu Dhabi</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant max-w-xs mt-xs">
+              Saadiyat Cultural District &amp; Al Maryah Island trophy residences.
+            </p>
+<a class="inline-flex items-center gap-xs font-label-caps text-label-caps uppercase text-primary mt-sm group-hover:translate-x-1 transition-transform" href="#">
+<span>View Listings</span>
+<span class="material-symbols-outlined text-[1rem]">arrow_forward</span>
+</a>
+</div>
+</div>
+<!-- Ras Al Khaimah / Sovereign Coastal Hub -->
+<div class="lg:col-span-2 relative h-full group overflow-hidden border border-outline-variant/30 bg-surface-container">
+<div class="absolute inset-0 bg-cover bg-center grayscale group-hover:grayscale-0 transition-all duration-700 group-hover:scale-105" data-alt="Architectural aerial view of Marjan Island in Ras Al Khaimah, clean turquoise coastline with luxury beachfront resorts and white sand beaches" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuAH4wktZ2fBikFtR0xcEMXWgK6TyJUc25FRIlHpouvWsb2n45V4FAxdBGotSSuhKrZXo9ILqdQ52Tz2IoDzFPqEigSTwr1rmjkZ8q6I9H2JPIOHYgHsjOfKXx7-hViZWYlEc8dBqoTldYFAF1JiDq9Ah3LSbgflpcBO_Nv7_VwLwdQo0JT9Ig064o1WhGpvBeE-1Ls3Ux7FLVubwXefY3Ip_xdVTgzsZXZc-OUIN5Lmme4unopEEYQYhw')">
+</div>
+<div class="absolute inset-0 bg-gradient-to-t from-surface-container-lowest via-surface-container-lowest/50 to-transparent"></div>
+<div class="absolute bottom-0 left-0 p-lg flex flex-col items-start">
+<span class="px-sm py-xxs bg-surface-container-highest text-on-surface-variant font-label-caps text-label-caps uppercase font-semibold mb-xs">Emerging</span>
+<h3 class="font-headline-sm text-headline-sm font-bold text-on-surface uppercase">RAK</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant text-[0.75rem] mt-xs">
+              Al Marjan Island ultra-luxury gaming resorts and private coastal suites.
+            </p>
+<a class="inline-flex items-center gap-xs font-label-caps text-label-caps uppercase text-primary mt-sm group-hover:translate-x-1 transition-transform" href="#">
+<span>Explore</span>
+<span class="material-symbols-outlined text-[1rem]">arrow_forward</span>
+</a>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- SECTION: "FOR SALE - PROPERTIES AVAILABLE FOR SALE" (matching Image 6 layout) -->
+<section class="relative w-full py-4xl bg-surface-container-low overflow-hidden">
+<!-- Huge watermark text "FOR SALE" -->
+<div class="absolute top-4 left-1/2 -translate-x-1/2 font-headline-xl text-[6.5rem] md:text-[11rem] lg:text-[14rem] font-extrabold uppercase text-surface-container-highest/15 pointer-events-none select-none whitespace-nowrap">
+      FOR SALE
+    </div>
+<div class="relative z-10 max-w-[1600px] mx-auto px-margin-mobile md:px-margin-tablet lg:px-margin-desktop">
+<!-- Section Header Bar with View All and Navigation Arrows -->
+<div class="flex flex-col md:flex-row md:items-end justify-between border-b border-outline-variant/30 pb-lg mb-2xl gap-md">
+<div>
+<span class="font-label-caps text-label-caps uppercase text-primary tracking-widest block mb-xxs">Curated Inventory</span>
+<h2 class="font-headline-lg text-headline-lg uppercase font-semibold text-on-surface">
+            PROPERTIES AVAILABLE FOR <span class="text-primary">SALE</span>
+</h2>
+</div>
+<div class="flex items-center gap-xl">
+<a class="font-label-caps text-label-caps uppercase text-primary hover:text-primary-fixed-dim inline-flex items-center gap-xs tracking-widest font-semibold group" href="#">
+<span>VIEW ALL PROPERTIES</span>
+<span class="material-symbols-outlined text-[1.1rem] group-hover:translate-x-1 transition-transform">chevron_right</span>
+</a>
+<div class="flex items-center gap-xs">
+<button aria-label="Previous" class="w-10 h-10 border border-outline-variant/50 flex items-center justify-center text-on-surface hover:border-primary hover:text-primary transition-colors">
+<span class="material-symbols-outlined text-[1.2rem]">arrow_back</span>
+</button>
+<button aria-label="Next" class="w-10 h-10 border border-outline-variant/50 flex items-center justify-center text-on-surface hover:border-primary hover:text-primary transition-colors">
+<span class="material-symbols-outlined text-[1.2rem]">arrow_forward</span>
+</button>
+</div>
+</div>
+</div>
+<!-- 3-Column Asset Cards Grid (matching Image 6 layout style) -->
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-xl">
+<!-- Card 1 -->
+<div class="group bg-surface-container border border-primary/20 hover:border-primary/60 transition-all flex flex-col justify-between overflow-hidden shadow-lg">
+<div class="relative h-64 overflow-hidden bg-surface-container-highest">
+<div class="w-full h-full bg-cover bg-center transition-transform duration-700 ease-out group-hover:scale-105" data-alt="Sunlit architectural luxury apartment exterior with palm trees, clean sandy stone facade, floor-to-ceiling glass windows under bright Dubai blue skies" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuDjOMzi-8HPWX1_T8_rUnqDu_BSN0zb-lOhFdlea_XFl2hXVpNDQrRF484pgpsxpzOlRO_6yQo3keojF820LFAsh2x4yYUn3fjG_RdMnvWMsfg4JYQ5BKry2ARsB-biG7ycyKYQR7eyefxD-BQbIMj0mjYvAXviiDG9TMwLftr7J8xDpQm4i6gUF9nC73O0RNKQ7r7Ez-CdaCW8qdbsO3gtc4yuL2Hm65_lfVMWymgvBZxNHbVbQsEf_g')">
+</div>
+<div class="absolute top-sm left-sm px-sm py-xxs bg-surface-container-lowest/90 border border-primary/30 font-label-caps text-label-caps uppercase text-primary">
+              Ready to Handover
+            </div>
+</div>
+<div class="p-lg flex flex-col flex-grow justify-between">
+<div>
+<div class="flex items-center gap-xs text-primary mb-xs">
+<span class="material-symbols-outlined text-[1.1rem]">apartment</span>
+<span class="font-headline-sm text-headline-sm font-semibold text-on-surface">Signature Apartment</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant line-clamp-1 mb-xs">
+                Investors Deal | Spacious Layout | High Floor Panorama
+              </p>
+<div class="flex items-center gap-xs text-on-surface-variant font-label-sm text-label-sm mb-md">
+<span class="material-symbols-outlined text-primary text-[1rem]">location_on</span>
+<span class="truncate">Palm Views West, Palm Jumeirah, Dubai</span>
+</div>
+<!-- Specs Row -->
+<div class="grid grid-cols-3 gap-xs py-sm border-y border-outline-variant/20 font-body-sm text-body-sm text-on-surface-variant mb-md">
+<div class="flex items-center gap-xxs">
+<span class="material-symbols-outlined text-primary text-[1rem]">bed</span>
+<span>2 Beds</span>
+</div>
+<div class="flex items-center gap-xxs">
+<span class="material-symbols-outlined text-primary text-[1rem]">bathtub</span>
+<span>3 Baths</span>
+</div>
+<div class="flex items-center gap-xxs">
+<span class="material-symbols-outlined text-primary text-[1rem]">square_foot</span>
+<span>1,850 sqft</span>
+</div>
+</div>
+</div>
+<!-- Footer: Price & Direct Actions -->
+<div class="flex items-center justify-between pt-xs">
+<div>
+<span class="font-label-caps text-[0.65rem] uppercase text-on-surface-variant block">Asking Price</span>
+<span class="font-headline-sm text-headline-sm font-bold text-primary">AED 4,850,000</span>
+</div>
+<div class="flex items-center gap-xs">
+<button class="w-8 h-8 rounded-none border border-outline-variant/40 flex items-center justify-center text-on-surface-variant hover:text-primary hover:border-primary transition-colors" title="Call Broker">
+<span class="material-symbols-outlined text-[1rem]">call</span>
+</button>
+<button class="w-8 h-8 rounded-none border border-outline-variant/40 flex items-center justify-center text-on-surface-variant hover:text-primary hover:border-primary transition-colors" title="Email Inquiry">
+<span class="material-symbols-outlined text-[1rem]">mail</span>
+</button>
+<button class="w-8 h-8 rounded-none border border-outline-variant/40 flex items-center justify-center text-on-surface-variant hover:text-primary hover:border-primary transition-colors" title="WhatsApp Concierge">
+<span class="material-symbols-outlined text-[1rem]">chat</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+<!-- Card 2 -->
+<div class="group bg-surface-container border border-primary/20 hover:border-primary/60 transition-all flex flex-col justify-between overflow-hidden shadow-lg">
+<div class="relative h-64 overflow-hidden bg-surface-container-highest">
+<div class="w-full h-full bg-cover bg-center transition-transform duration-700 ease-out group-hover:scale-105" data-alt="Modern Mediterranean inspired luxury villa resort building in Dubai with arched porticoes, golden exterior stone finish, and lush palm landscape" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuAiFtejqdS-YPvK27_rg8nmvT_suMdCR9qSMdzsib-cdlyarxlIwa1qtJsCC1yepqc7vvlMhxd-phJlIWn2HwtfodNbZjJ2kqnkOZVmxtd78ymy07bHwaivNkeQ3Kr8y9PHI_x76tcW4_JjNHLmQRlXDjFek5Wklco6YF4Q5I6b4OVBgmKKujmn74wizqzxGnrpLWdKBc8IdJUgkv0QnmA4O9WFvm6xSC02-iOze4IfuTtNQc0ArLCG9g')">
+</div>
+<div class="absolute top-sm left-sm px-sm py-xxs bg-surface-container-lowest/90 border border-primary/30 font-label-caps text-label-caps uppercase text-primary">
+              Prime Off-Market
+            </div>
+</div>
+<div class="p-lg flex flex-col flex-grow justify-between">
+<div>
+<div class="flex items-center gap-xs text-primary mb-xs">
+<span class="material-symbols-outlined text-[1.1rem]">villa</span>
+<span class="font-headline-sm text-headline-sm font-semibold text-on-surface">Canal Sky Villa</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant line-clamp-1 mb-xs">
+                Duplex Living | Private Infinity Pool | Private Elevator
+              </p>
+<div class="flex items-center gap-xs text-on-surface-variant font-label-sm text-label-sm mb-md">
+<span class="material-symbols-outlined text-primary text-[1rem]">location_on</span>
+<span class="truncate">Downtown Boulevard, Dubai, UAE</span>
+</div>
+<!-- Specs Row -->
+<div class="grid grid-cols-3 gap-xs py-sm border-y border-outline-variant/20 font-body-sm text-body-sm text-on-surface-variant mb-md">
+<div class="flex items-center gap-xxs">
+<span class="material-symbols-outlined text-primary text-[1rem]">bed</span>
+<span>4 Beds</span>
+</div>
+<div class="flex items-center gap-xxs">
+<span class="material-symbols-outlined text-primary text-[1rem]">bathtub</span>
+<span>5 Baths</span>
+</div>
+<div class="flex items-center gap-xxs">
+<span class="material-symbols-outlined text-primary text-[1rem]">square_foot</span>
+<span>4,920 sqft</span>
+</div>
+</div>
+</div>
+<!-- Footer: Price & Direct Actions -->
+<div class="flex items-center justify-between pt-xs">
+<div>
+<span class="font-label-caps text-[0.65rem] uppercase text-on-surface-variant block">Asking Price</span>
+<span class="font-headline-sm text-headline-sm font-bold text-primary">AED 12,400,000</span>
+</div>
+<div class="flex items-center gap-xs">
+<button class="w-8 h-8 rounded-none border border-outline-variant/40 flex items-center justify-center text-on-surface-variant hover:text-primary hover:border-primary transition-colors" title="Call Broker">
+<span class="material-symbols-outlined text-[1rem]">call</span>
+</button>
+<button class="w-8 h-8 rounded-none border border-outline-variant/40 flex items-center justify-center text-on-surface-variant hover:text-primary hover:border-primary transition-colors" title="Email Inquiry">
+<span class="material-symbols-outlined text-[1rem]">mail</span>
+</button>
+<button class="w-8 h-8 rounded-none border border-outline-variant/40 flex items-center justify-center text-on-surface-variant hover:text-primary hover:border-primary transition-colors" title="WhatsApp Concierge">
+<span class="material-symbols-outlined text-[1rem]">chat</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+<!-- Card 3 -->
+<div class="group bg-surface-container border border-primary/20 hover:border-primary/60 transition-all flex flex-col justify-between overflow-hidden shadow-lg">
+<div class="relative h-64 overflow-hidden bg-surface-container-highest">
+<div class="w-full h-full bg-cover bg-center transition-transform duration-700 ease-out group-hover:scale-105" data-alt="Elegant low-rise waterfront modern residences in Saadiyat Island Abu Dhabi with warm limestone facades, modern glass balconies, and blue sky" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuDfLDhsrec_pRfL9r8OCN-3rFRrs3Bq3W8DEWjPOlWVzZ3YGGSVhGqST_FkA4XIOhM32DXpJ8jPdaRkyGfQYbF11wN_7AFS6ZKoFSCdmctdFjHecN_1gR1A5m6LzKT6e1_0FQWo6oi9LfsAv6i0wqkmUrn6DrB71cB1U6kfRSBBVQYpOPVB74n-9ImJQASt6zpS0ukdoeM-T9OaYDFW5w78geM6m0vmpWONwBucHJ1A7su-qWUz9b5_xw')">
+</div>
+<div class="absolute top-sm left-sm px-sm py-xxs bg-surface-container-lowest/90 border border-primary/30 font-label-caps text-label-caps uppercase text-primary">
+              Cultural Oasis
+            </div>
+</div>
+<div class="p-lg flex flex-col flex-grow justify-between">
+<div>
+<div class="flex items-center gap-xs text-primary mb-xs">
+<span class="material-symbols-outlined text-[1.1rem]">domain</span>
+<span class="font-headline-sm text-headline-sm font-semibold text-on-surface">Saadiyat Haven Residence</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant line-clamp-1 mb-xs">
+                Museum District | Private Beach Access | LEED Gold
+              </p>
+<div class="flex items-center gap-xs text-on-surface-variant font-label-sm text-label-sm mb-md">
+<span class="material-symbols-outlined text-primary text-[1rem]">location_on</span>
+<span class="truncate">Saadiyat Island, Abu Dhabi</span>
+</div>
+<!-- Specs Row -->
+<div class="grid grid-cols-3 gap-xs py-sm border-y border-outline-variant/20 font-body-sm text-body-sm text-on-surface-variant mb-md">
+<div class="flex items-center gap-xxs">
+<span class="material-symbols-outlined text-primary text-[1rem]">bed</span>
+<span>3 Beds</span>
+</div>
+<div class="flex items-center gap-xxs">
+<span class="material-symbols-outlined text-primary text-[1rem]">bathtub</span>
+<span>4 Baths</span>
+</div>
+<div class="flex items-center gap-xxs">
+<span class="material-symbols-outlined text-primary text-[1rem]">square_foot</span>
+<span>3,150 sqft</span>
+</div>
+</div>
+</div>
+<!-- Footer: Price & Direct Actions -->
+<div class="flex items-center justify-between pt-xs">
+<div>
+<span class="font-label-caps text-[0.65rem] uppercase text-on-surface-variant block">Asking Price</span>
+<span class="font-headline-sm text-headline-sm font-bold text-primary">AED 7,900,000</span>
+</div>
+<div class="flex items-center gap-xs">
+<button class="w-8 h-8 rounded-none border border-outline-variant/40 flex items-center justify-center text-on-surface-variant hover:text-primary hover:border-primary transition-colors" title="Call Broker">
+<span class="material-symbols-outlined text-[1rem]">call</span>
+</button>
+<button class="w-8 h-8 rounded-none border border-outline-variant/40 flex items-center justify-center text-on-surface-variant hover:text-primary hover:border-primary transition-colors" title="Email Inquiry">
+<span class="material-symbols-outlined text-[1rem]">mail</span>
+</button>
+<button class="w-8 h-8 rounded-none border border-outline-variant/40 flex items-center justify-center text-on-surface-variant hover:text-primary hover:border-primary transition-colors" title="WhatsApp Concierge">
+<span class="material-symbols-outlined text-[1rem]">chat</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- SECTION: "FOR RENT - PROPERTIES AVAILABLE FOR RENT" (matching Image 7 layout) -->
+<section class="relative w-full py-4xl bg-surface overflow-hidden">
+<!-- Huge watermark text "FOR RENT" -->
+<div class="absolute top-4 left-1/2 -translate-x-1/2 font-headline-xl text-[6.5rem] md:text-[11rem] lg:text-[14rem] font-extrabold uppercase text-surface-container-highest/15 pointer-events-none select-none whitespace-nowrap">
+      FOR RENT
+    </div>
+<div class="relative z-10 max-w-[1600px] mx-auto px-margin-mobile md:px-margin-tablet lg:px-margin-desktop">
+<!-- Header with View All and Arrows -->
+<div class="flex flex-col md:flex-row md:items-end justify-between border-b border-outline-variant/30 pb-lg mb-2xl gap-md">
+<div>
+<span class="font-label-caps text-label-caps uppercase text-primary tracking-widest block mb-xxs">Prime Leasing Portfolio</span>
+<h2 class="font-headline-lg text-headline-lg uppercase font-semibold text-on-surface">
+            PROPERTIES AVAILABLE FOR <span class="text-primary">RENT</span>
+</h2>
+</div>
+<div class="flex items-center gap-xl">
+<a class="font-label-caps text-label-caps uppercase text-primary hover:text-primary-fixed-dim inline-flex items-center gap-xs tracking-widest font-semibold group" href="#">
+<span>VIEW ALL PROPERTIES</span>
+<span class="material-symbols-outlined text-[1.1rem] group-hover:translate-x-1 transition-transform">chevron_right</span>
+</a>
+<div class="flex items-center gap-xs">
+<button aria-label="Previous" class="w-10 h-10 border border-outline-variant/50 flex items-center justify-center text-on-surface hover:border-primary hover:text-primary transition-colors">
+<span class="material-symbols-outlined text-[1.2rem]">arrow_back</span>
+</button>
+<button aria-label="Next" class="w-10 h-10 border border-outline-variant/50 flex items-center justify-center text-on-surface hover:border-primary hover:text-primary transition-colors">
+<span class="material-symbols-outlined text-[1.2rem]">arrow_forward</span>
+</button>
+</div>
+</div>
+</div>
+<!-- 3-Column Rental Cards Grid -->
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-xl">
+<!-- Rental Card 1 -->
+<div class="group bg-surface-container border border-primary/20 hover:border-primary/60 transition-all flex flex-col justify-between overflow-hidden shadow-lg">
+<div class="relative h-64 overflow-hidden bg-surface-container-highest">
+<div class="w-full h-full bg-cover bg-center transition-transform duration-700 ease-out group-hover:scale-105" data-alt="Interior luxury penthouse balcony overlooking Dubai Marina skyline with stylish designer wire outdoor chairs, coffee table, and endless blue sky" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuA7qcrKhIzAya82A0rvBIgqxySewH81PgF2Ji8ppbTkNZcj4zxfULb31Z2Tmo4xPgpn_l1fz-gQwCgb5u3TnkKpDx-TJ8m1TTDYcfHQ4TbdmLLzq3NbXu1sD-jZP8MtQpkyEwwBG5iApYx4O8mdth-SfVVOZSkEJQIMHkhQ3yzrRyo3xmtkph0Nrpch8ScxPl-CwsPOCwuhD4vDOnFNzadKcOhhRIhfYix44RPEpRE2M63Yfk15Adx75g')">
+</div>
+<div class="absolute top-sm left-sm px-sm py-xxs bg-surface-container-lowest/90 border border-primary/30 font-label-caps text-label-caps uppercase text-primary">
+              Fully Furnished
+            </div>
+</div>
+<div class="p-lg flex flex-col flex-grow justify-between">
+<div>
+<div class="flex items-center gap-xs text-primary mb-xs">
+<span class="material-symbols-outlined text-[1.1rem]">apartment</span>
+<span class="font-headline-sm text-headline-sm font-semibold text-on-surface">Marina Penthouse Suite</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant line-clamp-1 mb-xs">
+                Designer Furniture by Minotti | Concierge &amp; Valet
+              </p>
+<div class="flex items-center gap-xs text-on-surface-variant font-label-sm text-label-sm mb-md">
+<span class="material-symbols-outlined text-primary text-[1rem]">location_on</span>
+<span class="truncate">Marina Promenade, Dubai Marina</span>
+</div>
+<!-- Specs Row -->
+<div class="grid grid-cols-3 gap-xs py-sm border-y border-outline-variant/20 font-body-sm text-body-sm text-on-surface-variant mb-md">
+<div class="flex items-center gap-xxs">
+<span class="material-symbols-outlined text-primary text-[1rem]">bed</span>
+<span>2 Beds</span>
+</div>
+<div class="flex items-center gap-xxs">
+<span class="material-symbols-outlined text-primary text-[1rem]">bathtub</span>
+<span>2 Baths</span>
+</div>
+<div class="flex items-center gap-xxs">
+<span class="material-symbols-outlined text-primary text-[1rem]">square_foot</span>
+<span>1,680 sqft</span>
+</div>
+</div>
+</div>
+<!-- Footer: Price & Direct Actions -->
+<div class="flex items-center justify-between pt-xs">
+<div>
+<span class="font-label-caps text-[0.65rem] uppercase text-on-surface-variant block">Annual Lease</span>
+<span class="font-headline-sm text-headline-sm font-bold text-primary">AED 240,000 <span class="font-label-sm text-[0.7rem] text-on-surface-variant font-normal">/ Year</span></span>
+</div>
+<div class="flex items-center gap-xs">
+<button class="w-8 h-8 rounded-none border border-outline-variant/40 flex items-center justify-center text-on-surface-variant hover:text-primary hover:border-primary transition-colors" title="Call Broker">
+<span class="material-symbols-outlined text-[1rem]">call</span>
+</button>
+<button class="w-8 h-8 rounded-none border border-outline-variant/40 flex items-center justify-center text-on-surface-variant hover:text-primary hover:border-primary transition-colors" title="Email Inquiry">
+<span class="material-symbols-outlined text-[1rem]">mail</span>
+</button>
+<button class="w-8 h-8 rounded-none border border-outline-variant/40 flex items-center justify-center text-on-surface-variant hover:text-primary hover:border-primary transition-colors" title="WhatsApp Concierge">
+<span class="material-symbols-outlined text-[1rem]">chat</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+<!-- Rental Card 2 -->
+<div class="group bg-surface-container border border-primary/20 hover:border-primary/60 transition-all flex flex-col justify-between overflow-hidden shadow-lg">
+<div class="relative h-64 overflow-hidden bg-surface-container-highest">
+<div class="w-full h-full bg-cover bg-center transition-transform duration-700 ease-out group-hover:scale-105" data-alt="Luxury resort style swimming pool terrace surrounded by contemporary glass building in Dubai, crystal clear water with lounge deck and pergola" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuC4jj-8wvfVwqTdn4EriFV3pCMJ1ebzR-BXtyOzV1F_-jZsGLgTmcgqePfMjPzd5awVh0Hh_6sH8DXvfT6WmuRZAPA7PfBV8SGoEyfi8x9fnj84wLhmE-gRWMcdFbLYwcjAc82kDeqjJZx7m701xCu2gPnp5f32Em6p970Nv3HwzmOKiFSfdkJ6BAGeXUxS1DBYTM7mxF38uyUIgW7JGmfkLPBZy1E1eW8g-rVUUqx1YeBohP-p2nq-yw')">
+</div>
+<div class="absolute top-sm left-sm px-sm py-xxs bg-surface-container-lowest/90 border border-primary/30 font-label-caps text-label-caps uppercase text-primary">
+              Ready To Move
+            </div>
+</div>
+<div class="p-lg flex flex-col flex-grow justify-between">
+<div>
+<div class="flex items-center gap-xs text-primary mb-xs">
+<span class="material-symbols-outlined text-[1.1rem]">pool</span>
+<span class="font-headline-sm text-headline-sm font-semibold text-on-surface">Al Furjan Resort Suite</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant line-clamp-1 mb-xs">
+                Near Metro Hub | Full Pool &amp; Garden View | Modern Kitchen
+              </p>
+<div class="flex items-center gap-xs text-on-surface-variant font-label-sm text-label-sm mb-md">
+<span class="material-symbols-outlined text-primary text-[1rem]">location_on</span>
+<span class="truncate">Al Furjan, Dubai, United Arab Emirates</span>
+</div>
+<!-- Specs Row -->
+<div class="grid grid-cols-3 gap-xs py-sm border-y border-outline-variant/20 font-body-sm text-body-sm text-on-surface-variant mb-md">
+<div class="flex items-center gap-xxs">
+<span class="material-symbols-outlined text-primary text-[1rem]">bed</span>
+<span>1 Bed</span>
+</div>
+<div class="flex items-center gap-xxs">
+<span class="material-symbols-outlined text-primary text-[1rem]">bathtub</span>
+<span>2 Baths</span>
+</div>
+<div class="flex items-center gap-xxs">
+<span class="material-symbols-outlined text-primary text-[1rem]">square_foot</span>
+<span>980 sqft</span>
+</div>
+</div>
+</div>
+<!-- Footer: Price & Direct Actions -->
+<div class="flex items-center justify-between pt-xs">
+<div>
+<span class="font-label-caps text-[0.65rem] uppercase text-on-surface-variant block">Annual Lease</span>
+<span class="font-headline-sm text-headline-sm font-bold text-primary">AED 135,000 <span class="font-label-sm text-[0.7rem] text-on-surface-variant font-normal">/ Year</span></span>
+</div>
+<div class="flex items-center gap-xs">
+<button class="w-8 h-8 rounded-none border border-outline-variant/40 flex items-center justify-center text-on-surface-variant hover:text-primary hover:border-primary transition-colors" title="Call Broker">
+<span class="material-symbols-outlined text-[1rem]">call</span>
+</button>
+<button class="w-8 h-8 rounded-none border border-outline-variant/40 flex items-center justify-center text-on-surface-variant hover:text-primary hover:border-primary transition-colors" title="Email Inquiry">
+<span class="material-symbols-outlined text-[1rem]">mail</span>
+</button>
+<button class="w-8 h-8 rounded-none border border-outline-variant/40 flex items-center justify-center text-on-surface-variant hover:text-primary hover:border-primary transition-colors" title="WhatsApp Concierge">
+<span class="material-symbols-outlined text-[1rem]">chat</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+<!-- Rental Card 3 -->
+<div class="group bg-surface-container border border-primary/20 hover:border-primary/60 transition-all flex flex-col justify-between overflow-hidden shadow-lg">
+<div class="relative h-64 overflow-hidden bg-surface-container-highest">
+<div class="w-full h-full bg-cover bg-center transition-transform duration-700 ease-out group-hover:scale-105" data-alt="Interior perspective through an open luxury apartment glass window looking out onto landscaped palm courtyards and warm terracotta modern architecture" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuBOU5RHF9VBSss3od2vl48IkxoR7Kw2Vti4jQTbC7il1QqnG0BJ2ln2HD4SIAtFhypdLVJqJRuXXpjslebClv78GxcxOCiG_PHcvQ_SyF3cZezP7qW6bfp-BJPf8ceCGlPJmKg3LVxSz5e__NlLpV07cuGup_yLmB1G129BL8IWsqhed8racA10BJE3mtA0Bp2HYccw3LBeGOCQI2ryHniPdeT5bBJzF9ThioocccMsLQ7fyeaVBoWCzg')">
+</div>
+<div class="absolute top-sm left-sm px-sm py-xxs bg-surface-container-lowest/90 border border-primary/30 font-label-caps text-label-caps uppercase text-primary">
+              Vacant &amp; Upgraded
+            </div>
+</div>
+<div class="p-lg flex flex-col flex-grow justify-between">
+<div>
+<div class="flex items-center gap-xs text-primary mb-xs">
+<span class="material-symbols-outlined text-[1.1rem]">cottage</span>
+<span class="font-headline-sm text-headline-sm font-semibold text-on-surface">Jumeirah Islands Garden Flat</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant line-clamp-1 mb-xs">
+                Lake View | Private Landscaped Terrace | 2 Parking Bays
+              </p>
+<div class="flex items-center gap-xs text-on-surface-variant font-label-sm text-label-sm mb-md">
+<span class="material-symbols-outlined text-primary text-[1rem]">location_on</span>
+<span class="truncate">Jumeirah Islands, Dubai, UAE</span>
+</div>
+<!-- Specs Row -->
+<div class="grid grid-cols-3 gap-xs py-sm border-y border-outline-variant/20 font-body-sm text-body-sm text-on-surface-variant mb-md">
+<div class="flex items-center gap-xxs">
+<span class="material-symbols-outlined text-primary text-[1rem]">bed</span>
+<span>3 Beds</span>
+</div>
+<div class="flex items-center gap-xxs">
+<span class="material-symbols-outlined text-primary text-[1rem]">bathtub</span>
+<span>4 Baths</span>
+</div>
+<div class="flex items-center gap-xxs">
+<span class="material-symbols-outlined text-primary text-[1rem]">square_foot</span>
+<span>2,850 sqft</span>
+</div>
+</div>
+</div>
+<!-- Footer: Price & Direct Actions -->
+<div class="flex items-center justify-between pt-xs">
+<div>
+<span class="font-label-caps text-[0.65rem] uppercase text-on-surface-variant block">Annual Lease</span>
+<span class="font-headline-sm text-headline-sm font-bold text-primary">AED 320,000 <span class="font-label-sm text-[0.7rem] text-on-surface-variant font-normal">/ Year</span></span>
+</div>
+<div class="flex items-center gap-xs">
+<button class="w-8 h-8 rounded-none border border-outline-variant/40 flex items-center justify-center text-on-surface-variant hover:text-primary hover:border-primary transition-colors" title="Call Broker">
+<span class="material-symbols-outlined text-[1rem]">call</span>
+</button>
+<button class="w-8 h-8 rounded-none border border-outline-variant/40 flex items-center justify-center text-on-surface-variant hover:text-primary hover:border-primary transition-colors" title="Email Inquiry">
+<span class="material-symbols-outlined text-[1rem]">mail</span>
+</button>
+<button class="w-8 h-8 rounded-none border border-outline-variant/40 flex items-center justify-center text-on-surface-variant hover:text-primary hover:border-primary transition-colors" title="WhatsApp Concierge">
+<span class="material-symbols-outlined text-[1rem]">chat</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- SECTION: "ABOUT TRUELINE / WHO WE ARE & AWARDS" (matching Image 4 layout) -->
+<section class="relative w-full min-h-[560px] flex items-center bg-surface-container-lowest overflow-hidden">
+<!-- Huge watermark text "ABOUT TRUELINE / AWARDS" -->
+<div class="absolute top-6 left-1/2 -translate-x-1/2 font-headline-xl text-[5.5rem] md:text-[9rem] lg:text-[12rem] font-extrabold uppercase text-surface-container-highest/10 pointer-events-none select-none whitespace-nowrap">
+      ABOUT TRUELINE • AWARDS
+    </div>
+<!-- Monochrome team gala / awards background image -->
+<div class="absolute inset-0 bg-cover bg-right md:bg-center grayscale contrast-125 opacity-40 mix-blend-luminosity" data-alt="High contrast black and white photograph of an elite multinational gala crowd of executive real estate partners and private wealth brokers dressed in luxury black-tie tuxedos celebrating an awards ceremony on stage with subtle ambient lighting" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuB6MxdmAR_ymBgpwuiOeJMY7TDVBV6I8gThbOndZq1k8wF4p70QR3FLcUnUvUlmnMjL58DzrpcrHpGgv2Qq-2mBMRuxzEJgLS3SbqFJdEPDX5n_Vae04NqI6ZokXrFcFkITBK6v-p-xUFKnb956gEWucsLISlRutZ-26GhxESGHM9SuQSZMenJRHrLPTf5xMCqJfNFnX3LpUF0_CxocDwrsUSj_7aevhbCuGANHDn41QYCKiTNOhOJCaQ')">
+</div>
+<div class="absolute inset-0 bg-gradient-to-r from-background via-background/95 to-transparent"></div>
+<div class="relative z-10 max-w-[1600px] w-full mx-auto px-margin-mobile md:px-margin-tablet lg:px-margin-desktop py-4xl">
+<div class="max-w-xl bg-surface-container/70 border border-primary/20 backdrop-blur-xl p-xl md:p-2xl">
+<span class="font-label-caps text-label-caps uppercase tracking-[0.25em] text-primary block mb-xs">Institutional Authority</span>
+<h2 class="font-headline-lg text-headline-lg uppercase font-bold text-on-surface mb-md">
+          WHO <span class="text-primary">WE ARE</span>
+</h2>
+<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed mb-xl">
+          Trueline Real Estate stands as a prominent and distinguished real estate advisory in the United Arab Emirates and international financial capitals, embodying excellence, discretion, and institutional market authority in an ever-evolving property landscape.
+        </p>
+<div class="flex flex-wrap items-center gap-md">
+<a class="px-xl py-sm bg-primary text-on-primary font-label-caps text-label-caps uppercase font-semibold tracking-widest hover:bg-primary-fixed-dim transition-all shadow-md" href="#">
+            Know More
+          </a>
+<div class="flex items-center gap-xs text-on-surface-variant font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-primary text-[1.2rem]">workspace_premium</span>
+<span>Winner Best Sovereign Agency 2023 • 2024</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- SECTION: "TESTIMONIALS / REVIEWS & COMMENTS" (matching Image 5 layout) -->
+<section class="relative w-full py-4xl bg-surface-container-low overflow-hidden">
+<!-- Huge watermark text "TESTIMONIALS" -->
+<div class="absolute top-4 left-1/2 -translate-x-1/2 font-headline-xl text-[6rem] md:text-[10rem] lg:text-[13rem] font-extrabold uppercase text-surface-container-highest/15 pointer-events-none select-none whitespace-nowrap">
+      TESTIMONIALS
+    </div>
+<div class="relative z-10 max-w-[1600px] mx-auto px-margin-mobile md:px-margin-tablet lg:px-margin-desktop">
+<!-- Section Header with Arrows -->
+<div class="flex flex-col md:flex-row md:items-end justify-between border-b border-outline-variant/30 pb-lg mb-2xl gap-md">
+<div>
+<h2 class="font-headline-lg text-headline-lg uppercase font-semibold text-on-surface">
+            Reviews &amp; Comments
+          </h2>
+<span class="font-label-caps text-label-caps uppercase tracking-[0.2em] text-primary mt-xxs block">
+            YOU CAN COUNT <span class="text-on-surface">ON US</span>
+</span>
+</div>
+<div class="flex items-center gap-xs">
+<button aria-label="Previous Testimonial" class="w-10 h-10 border border-outline-variant/50 flex items-center justify-center text-on-surface hover:border-primary hover:text-primary transition-colors">
+<span class="material-symbols-outlined text-[1.2rem]">arrow_back</span>
+</button>
+<button aria-label="Next Testimonial" class="w-10 h-10 border border-outline-variant/50 flex items-center justify-center text-on-surface hover:border-primary hover:text-primary transition-colors">
+<span class="material-symbols-outlined text-[1.2rem]">arrow_forward</span>
+</button>
+</div>
+</div>
+<!-- 3 Testimonial Minimalist Dark Cards (matching Image 5 style) -->
+<div class="grid grid-cols-1 md:grid-cols-3 gap-xl">
+<!-- Review 1 -->
+<div class="p-xl bg-surface-container border border-outline-variant/30 hover:border-primary/50 transition-all flex flex-col justify-between">
+<div>
+<div class="flex items-center gap-xxs text-primary mb-md">
+<span class="material-symbols-outlined text-[1rem]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[1rem]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[1rem]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[1rem]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[1rem]" style="font-variation-settings: 'FILL' 1;">star</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm font-bold text-on-surface mb-sm">Firas Najjar</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
+              "I have worked with Trueline, specifically their private sovereign client desk. They handled our multi-property acquisition across Dubai and Abu Dhabi with absolute discretion, institutional underwriting, and zero friction. They are unquestionably the pinnacle of real estate advisory."
+            </p>
+</div>
+<div class="mt-lg pt-sm border-t border-outline-variant/20 font-label-caps text-[0.68rem] uppercase text-primary tracking-wider">
+            Verified Portfolio Client • Dubai
+          </div>
+</div>
+<!-- Review 2 -->
+<div class="p-xl bg-surface-container border border-primary/40 shadow-xl flex flex-col justify-between relative">
+<div class="absolute -top-3 right-6 px-sm py-xxs bg-primary text-on-primary font-label-caps text-[0.65rem] uppercase font-bold tracking-widest">
+            Institutional Trust
+          </div>
+<div>
+<div class="flex items-center gap-xxs text-primary mb-md">
+<span class="material-symbols-outlined text-[1rem]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[1rem]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[1rem]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[1rem]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[1rem]" style="font-variation-settings: 'FILL' 1;">star</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm font-bold text-on-surface mb-sm">Go Inoue</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
+              "By far, this is the best asset management &amp; acquisition company in the UAE. Our family office relies on their advisors for clear yield projection, regulatory conveyance, and impeccable tenant management. Every single requirement was resolved with high precision."
+            </p>
+</div>
+<div class="mt-lg pt-sm border-t border-outline-variant/20 font-label-caps text-[0.68rem] uppercase text-primary tracking-wider">
+            Tokyo • Sovereign Investor
+          </div>
+</div>
+<!-- Review 3 -->
+<div class="p-xl bg-surface-container border border-outline-variant/30 hover:border-primary/50 transition-all flex flex-col justify-between">
+<div>
+<div class="flex items-center gap-xxs text-primary mb-md">
+<span class="material-symbols-outlined text-[1rem]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[1rem]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[1rem]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[1rem]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[1rem]" style="font-variation-settings: 'FILL' 1;">star</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm font-bold text-on-surface mb-sm">Elena Rostova</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
+              "From securing off-market penthouse allocations on the Palm to setting up escrow custodial services, Trueline proved second to none. The level of confidentiality, speed, and market intelligence is unmatched in the Middle East region."
+            </p>
+</div>
+<div class="mt-lg pt-sm border-t border-outline-variant/20 font-label-caps text-[0.68rem] uppercase text-primary tracking-wider">
+            Geneva Private Client
+          </div>
+</div>
+</div>
+</div>
+</section>
+<!-- SECTION: "FAQ / ASK ANYTHING FROM US" (matching Image 3 layout) -->
+<section class="relative w-full py-4xl bg-surface overflow-hidden">
+<!-- Huge watermark text "FAQ" -->
+<div class="absolute top-4 right-1/4 font-headline-xl text-[6rem] md:text-[11rem] lg:text-[14rem] font-extrabold uppercase text-surface-container-highest/15 pointer-events-none select-none whitespace-nowrap">
+      FAQ
+    </div>
+<div class="relative z-10 max-w-[1200px] mx-auto px-margin-mobile md:px-margin-tablet lg:px-margin-desktop">
+<div class="mb-2xl">
+<h2 class="font-headline-lg text-headline-lg uppercase font-bold text-on-surface">
+          ASK ANYTHING <span class="text-primary">FROM US</span>
+</h2>
+<p class="font-body-md text-body-md text-on-surface-variant mt-xs">
+          Everything you need to know about acquisition protocols, leasing laws, and sovereign property investments. Can't find the answer you're looking for? Please contact our private client team.
+        </p>
+</div>
+<!-- FAQ Accordion List with Javascript Toggles -->
+<div class="space-y-sm" id="faq-container">
+<!-- FAQ Item 1 (Default Open) -->
+<div class="faq-item bg-surface-container border border-primary/30 p-lg transition-colors">
+<button class="faq-trigger w-full flex items-center justify-between text-left gap-md focus:outline-none">
+<span class="font-headline-sm text-headline-sm font-medium text-on-surface">
+              What documents are required to acquire property in Dubai and the UAE?
+            </span>
+<span class="material-symbols-outlined text-primary text-[1.4rem] transition-transform duration-300 rotate-180 faq-icon">expand_more</span>
+</button>
+<div class="faq-content pt-sm font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
+            When purchasing residential or commercial property in the UAE, international buyers require a valid passport copy, proof of address, source of funds documentation, and completed KYC disclosures. For UAE residents, an Emirates ID is additionally required. Our dedicated legal conveyance desk prepares the unified MOU (Form F), secures No Objection Certificates (NOC) from developers, and represents you at the Dubai Land Department (DLD) for title deed execution.
+          </div>
+</div>
+<!-- FAQ Item 2 -->
+<div class="faq-item bg-surface-container border border-outline-variant/30 hover:border-primary/40 p-lg transition-colors">
+<button class="faq-trigger w-full flex items-center justify-between text-left gap-md focus:outline-none">
+<span class="font-headline-sm text-headline-sm font-medium text-on-surface">
+              How is rental yield and net ROI calculated for off-plan luxury projects?
+            </span>
+<span class="material-symbols-outlined text-primary text-[1.4rem] transition-transform duration-300 faq-icon">expand_more</span>
+</button>
+<div class="faq-content hidden pt-sm font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
+            Gross rental yields are calculated by dividing annual gross rental projections by total capital outlay (purchase price + 4% DLD fees + administrative registration). Net yields incorporate ongoing master-community service charges, property management fees (typically 5-8%), and sinking fund contributions. Prime Dubai residential yields historically range between 6.5% and 9.2% net.
+          </div>
+</div>
+<!-- FAQ Item 3 -->
+<div class="faq-item bg-surface-container border border-outline-variant/30 hover:border-primary/40 p-lg transition-colors">
+<button class="faq-trigger w-full flex items-center justify-between text-left gap-md focus:outline-none">
+<span class="font-headline-sm text-headline-sm font-medium text-on-surface">
+              Can foreign nationals and overseas corporate entities own 100% freehold real estate?
+            </span>
+<span class="material-symbols-outlined text-primary text-[1.4rem] transition-transform duration-300 faq-icon">expand_more</span>
+</button>
+<div class="faq-content hidden pt-sm font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
+            Yes. Under UAE Property Law, foreign nationals and offshore entities can own absolute freehold titles in designated investment zones including Palm Jumeirah, Downtown Dubai, Dubai Marina, DIFC, and Saadiyat Island. We also assist institutional clients with ADGM and DIFC Special Purpose Vehicles (SPVs) for tax-efficient multi-asset holding.
+          </div>
+</div>
+<!-- FAQ Item 4 -->
+<div class="faq-item bg-surface-container border border-outline-variant/30 hover:border-primary/40 p-lg transition-colors">
+<button class="faq-trigger w-full flex items-center justify-between text-left gap-md focus:outline-none">
+<span class="font-headline-sm text-headline-sm font-medium text-on-surface">
+              What is the timeline and confidentiality protocol for private off-market transactions?
+            </span>
+<span class="material-symbols-outlined text-primary text-[1.4rem] transition-transform duration-300 faq-icon">expand_more</span>
+</button>
+<div class="faq-content hidden pt-sm font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
+            Off-market acquisitions are insulated by non-disclosure agreements (NDAs) signed prior to portfolio disclosure. Once terms are approved, typical cash transfers take between 7 to 14 business days to achieve unconditional conveyance and title issuance under trustee escrow protocols.
+          </div>
+</div>
+<!-- FAQ Item 5 -->
+<div class="faq-item bg-surface-container border border-outline-variant/30 hover:border-primary/40 p-lg transition-colors">
+<button class="faq-trigger w-full flex items-center justify-between text-left gap-md focus:outline-none">
+<span class="font-headline-sm text-headline-sm font-medium text-on-surface">
+              What is the process for securing private wealth mortgage financing for non-residents?
+            </span>
+<span class="material-symbols-outlined text-primary text-[1.4rem] transition-transform duration-300 faq-icon">expand_more</span>
+</button>
+<div class="faq-content hidden pt-sm font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
+            Non-resident international buyers are eligible for up to 60-70% Loan-to-Value (LTV) from premier tier-1 private banks in the UAE. Our in-house mortgage advisory manages pre-approvals, property valuations, and rate hedging directly with leading international lenders.
+          </div>
+</div>
+</div>
+</div>
+</section>
+<!-- FLOATING ACTION WIDGETS (Matching bottom-right and bottom-left controls in reference screenshots) -->
+<!-- Scroll to Top (Bottom-Left) -->
+<button aria-label="Scroll to top" class="fixed bottom-6 left-6 z-40 w-11 h-11 bg-primary text-on-primary shadow-2xl flex items-center justify-center hover:bg-primary-fixed-dim transition-all hover:scale-105 active:scale-95" onclick="window.scrollTo({top: 0, behavior: 'smooth'})" title="Scroll to Top">
+<span class="material-symbols-outlined text-[1.3rem]">arrow_upward</span>
+</button>
+<!-- Floating Call & WhatsApp Widgets (Bottom-Right) -->
+<div class="fixed bottom-6 right-6 z-40 flex flex-col gap-xs items-end">
+<!-- Call Action Button -->
+<a aria-label="Call concierge" class="w-12 h-12 bg-primary text-on-primary shadow-[0_4px_20px_rgba(0,0,0,0.5)] flex items-center justify-center hover:bg-primary-fixed-dim transition-all hover:scale-105 active:scale-95" href="tel:+97143128800" title="Direct Telephone Concierge">
+<span class="material-symbols-outlined text-[1.4rem]">call</span>
+</a>
+<!-- WhatsApp Action Button -->
+<a aria-label="Chat on WhatsApp" class="w-12 h-12 bg-[#25D366] text-[#030c29] shadow-[0_4px_20px_rgba(0,0,0,0.5)] flex items-center justify-center hover:brightness-110 transition-all hover:scale-105 active:scale-95" href="https://wa.me/97143128800" title="Chat on WhatsApp">
+<span class="material-symbols-outlined text-[1.4rem]">chat</span>
+</a>
+</div>
+</div>
+<!-- Vanilla JS Interactions for Tab Switching and FAQ Accordions -->
+<script>
+  // Search tab switcher
+  const tabButtons = document.querySelectorAll('.search-tab-btn');
+  tabButtons.forEach(btn => {
+    btn.addEventListener('click', () => {
+      tabButtons.forEach(b => {
+        b.classList.remove('bg-primary', 'text-on-primary', 'active');
+        b.classList.add('bg-surface-container-high', 'text-on-surface');
+      });
+      btn.classList.add('bg-primary', 'text-on-primary', 'active');
+      btn.classList.remove('bg-surface-container-high', 'text-on-surface');
+    });
+  });
+
+  // FAQ Accordion interactions
+  const faqItems = document.querySelectorAll('.faq-item');
+  faqItems.forEach(item => {
+    const trigger = item.querySelector('.faq-trigger');
+    const content = item.querySelector('.faq-content');
+    const icon = item.querySelector('.faq-icon');
+    
+    trigger.addEventListener('click', () => {
+      const isOpen = !content.classList.contains('hidden');
+      
+      // Close all others
+      faqItems.forEach(otherItem => {
+        otherItem.querySelector('.faq-content').classList.add('hidden');
+        otherItem.querySelector('.faq-icon').classList.remove('rotate-180');
+        otherItem.classList.remove('border-primary/30');
+        otherItem.classList.add('border-outline-variant/30');
+      });
+      
+      if (!isOpen) {
+        content.classList.remove('hidden');
+        icon.classList.add('rotate-180');
+        item.classList.add('border-primary/30');
+        item.classList.remove('border-outline-variant/30');
+      }
+    });
+  });
+</script></main><footer class="w-full bg-surface-container-lowest"><div class="max-w-[1600px] mx-auto px-margin-mobile md:px-margin-tablet lg:px-margin-desktop py-4xl"><div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-2xl mb-4xl"><div><span class="font-headline-sm text-headline-sm uppercase text-on-surface tracking-widest font-semibold block mb-sm">Trueline</span><p class="font-body-sm text-body-sm text-on-surface-variant max-w-xs">Sovereign advisory, institutional acquisition, and prime global residential assets.</p></div><div><span class="font-label-caps text-label-caps uppercase text-primary block mb-md">London</span><p class="font-body-sm text-body-sm text-on-surface-variant">14 Grosvenor Square</p><p class="font-body-sm text-body-sm text-on-surface-variant">Mayfair, London W1K 6LF</p><p class="font-label-sm text-label-sm text-primary mt-xs">+44 20 7946 0912</p></div><div><span class="font-label-caps text-label-caps uppercase text-primary block mb-md">Dubai</span><p class="font-body-sm text-body-sm text-on-surface-variant">DIFC Gate Precinct 4</p><p class="font-body-sm text-body-sm text-on-surface-variant">Level 18, Dubai, UAE</p><p class="font-label-sm text-label-sm text-primary mt-xs">+971 4 312 8800</p></div><div><span class="font-label-caps text-label-caps uppercase text-primary block mb-md">New York</span><p class="font-body-sm text-body-sm text-on-surface-variant">767 Fifth Avenue</p><p class="font-body-sm text-body-sm text-on-surface-variant">Manhattan, NY 10153</p><p class="font-label-sm text-label-sm text-primary mt-xs">+1 212 555 0198</p></div><div><span class="font-label-caps text-label-caps uppercase text-primary block mb-md">Singapore</span><p class="font-body-sm text-body-sm text-on-surface-variant">Marina Bay Financial Centre</p><p class="font-body-sm text-body-sm text-on-surface-variant">Tower 2, Singapore 018983</p><p class="font-label-sm text-label-sm text-primary mt-xs">+65 6718 2000</p></div></div><div class="flex flex-col md:flex-row items-center justify-between gap-md pt-xl"><p class="font-label-caps text-label-caps uppercase text-on-surface-variant">© 2024 Trueline Real Estate Sovereign Holdings. All rights reserved.</p><p class="font-label-caps text-label-caps uppercase text-primary tracking-widest">Regulated by RICS &amp; Global Private Wealth Disclosures</p></div></div></footer></body></html>
