@@ -1,5 +1,6 @@
 "use client";
 import Link from 'next/link';
+import Image from 'next/image';
 import { usePathname } from 'next/navigation';
 import { useState, useEffect } from 'react';
 
@@ -27,13 +28,13 @@ export default function Header() {
         <div className="h-20 max-w-[1600px] mx-auto px-margin-mobile md:px-margin-tablet lg:px-margin-desktop flex items-center justify-between">
           
           <Link className="flex items-center gap-xs relative z-[60]" href="/">
-            <span className="font-headline-sm text-headline-sm uppercase text-on-surface tracking-widest font-bold">Trueline</span>
-            <span className="font-label-caps text-label-caps uppercase text-primary tracking-widest">Estates</span>
+            <Image src="/Trueline.png" alt="Trueline Real Estate" width={250} height={80} className="h-16 w-auto object-contain" />
           </Link>
           
           {/* Desktop Navigation */}
           <nav className="hidden lg:flex items-center gap-xl" data-active-classes="text-primary font-bold">
-            <Link className={`uppercase transition-colors font-bold ${pathname === "/" ? "text-primary" : "text-on-surface-variant hover:text-on-surface"}`} href="/">Home</Link>
+            <Link className={`font-label-caps text-label-caps uppercase transition-colors font-bold ${pathname === "/" ? "text-primary" : "text-on-surface-variant hover:text-on-surface"}`} href="/">Home</Link>
+            <Link className={`font-label-caps text-label-caps uppercase transition-colors font-bold ${pathname === "/about" ? "text-primary" : "text-on-surface-variant hover:text-on-surface"}`} href="/about">About Us</Link>
             <Link className={`font-label-caps text-label-caps uppercase transition-colors font-bold ${pathname === "/developments" ? "text-primary" : "text-on-surface-variant hover:text-on-surface"}`} href="/developments">Developments</Link>
             <Link className={`font-label-caps text-label-caps uppercase transition-colors font-bold ${pathname === "/advisory" ? "text-primary" : "text-on-surface-variant hover:text-on-surface"}`} href="/advisory">Advisory</Link>
             <Link className={`font-label-caps text-label-caps uppercase transition-colors font-bold ${pathname === "/private-office" ? "text-primary" : "text-on-surface-variant hover:text-on-surface"}`} href="/private-office">Private Office</Link>
@@ -68,16 +69,13 @@ export default function Header() {
       >
         <nav className="flex flex-col items-center gap-2xl">
           <Link className={`text-[1.5rem] uppercase tracking-widest font-bold transition-all ${pathname === "/" ? "text-primary scale-110" : "text-on-surface-variant hover:text-on-surface"}`} href="/">Home</Link>
+          <Link className={`text-[1.5rem] uppercase tracking-widest font-bold transition-all ${pathname === "/about" ? "text-primary scale-110" : "text-on-surface-variant hover:text-on-surface"}`} href="/about">About Us</Link>
           <Link className={`text-[1.5rem] uppercase tracking-widest font-bold transition-all ${pathname === "/developments" ? "text-primary scale-110" : "text-on-surface-variant hover:text-on-surface"}`} href="/developments">Developments</Link>
           <Link className={`text-[1.5rem] uppercase tracking-widest font-bold transition-all ${pathname === "/advisory" ? "text-primary scale-110" : "text-on-surface-variant hover:text-on-surface"}`} href="/advisory">Advisory</Link>
           <Link className={`text-[1.5rem] uppercase tracking-widest font-bold transition-all ${pathname === "/private-office" ? "text-primary scale-110" : "text-on-surface-variant hover:text-on-surface"}`} href="/private-office">Private Office</Link>
           <Link className={`text-[1.5rem] uppercase tracking-widest font-bold transition-all ${pathname === "/contact" ? "text-primary scale-110" : "text-on-surface-variant hover:text-on-surface"}`} href="/contact">Contact</Link>
         </nav>
         
-        <div className="absolute bottom-4xl flex flex-col items-center gap-md">
-          <span className="font-label-caps text-label-caps uppercase text-primary tracking-widest">Concierge Desk</span>
-          <a href="tel:+97143128800" className="font-body-lg text-body-lg text-on-surface">+971 4 312 8800</a>
-        </div>
       </div>
     </>
   );
