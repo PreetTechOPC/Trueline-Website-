@@ -39,10 +39,10 @@ export default function AdvisoryPage() {
                 <span className="material-symbols-outlined text-[2rem]">account_balance</span>
               </div>
               <h3 className="font-headline-sm text-headline-sm uppercase font-semibold text-on-surface mb-sm">
-                Portfolio Management
+                Developer Viability & Land Scouting
               </h3>
               <p className="font-body-md text-body-md text-on-surface-variant leading-relaxed">
-                Strategic asset allocation and yield optimization. We construct and manage diversified real estate portfolios tailored to your specific risk and return parameters across prime global markets.
+                Prime land evaluation and architectural viability modeling.
               </p>
             </div>
 
@@ -52,10 +52,10 @@ export default function AdvisoryPage() {
                 <span className="material-symbols-outlined text-[2rem]">real_estate_agent</span>
               </div>
               <h3 className="font-headline-sm text-headline-sm uppercase font-semibold text-on-surface mb-sm">
-                Global Mortgages
+                Family Office Wealth Structuring
               </h3>
               <p className="font-body-md text-body-md text-on-surface-variant leading-relaxed">
-                Bespoke financing structures for international UHNW buyers. Our in-house mortgage advisory manages pre-approvals, property valuations, and rate hedging directly with leading tier-1 private lenders.
+                Bulk off-plan exit strategies, capital preservation, and projected net yields.
               </p>
             </div>
 
@@ -65,10 +65,10 @@ export default function AdvisoryPage() {
                 <span className="material-symbols-outlined text-[2rem]">gavel</span>
               </div>
               <h3 className="font-headline-sm text-headline-sm uppercase font-semibold text-on-surface mb-sm">
-                Legal & Conveyancing
+                Conveyance & DLD Escrow Desk
               </h3>
               <p className="font-body-md text-body-md text-on-surface-variant leading-relaxed">
-                Seamless transaction execution. Our dedicated legal conveyance desk prepares unified MOUs, secures No Objection Certificates (NOC), and represents you at the Land Department for title deed execution.
+                Form F processing, developer NOC issuance, and institutional settlement.
               </p>
             </div>
 

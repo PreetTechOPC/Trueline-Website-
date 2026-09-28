@@ -131,14 +131,23 @@ export default function ContactPage() {
                 </div>
                 
                 <div className="flex flex-col gap-xs">
-                  <label className="font-label-caps text-[0.65rem] uppercase tracking-widest text-on-surface-variant">Area of Interest</label>
-                  <select className="bg-background border-b border-outline-variant/50 px-sm py-sm text-on-surface focus:outline-none focus:border-primary transition-colors appearance-none">
-                    <option value="" disabled selected>Select an option</option>
-                    <option value="portfolio">Portfolio Management</option>
-                    <option value="developments">Off-Plan Developments</option>
-                    <option value="mortgage">Global Mortgages</option>
-                    <option value="private-office">Private Office Access</option>
-                    <option value="other">Other Inquiry</option>
+                  <label className="font-label-caps text-[0.65rem] uppercase tracking-widest text-on-surface-variant">Inquiry Type</label>
+                  <select defaultValue="" className="bg-background border-b border-outline-variant/50 px-sm py-sm text-on-surface focus:outline-none focus:border-primary transition-colors appearance-none">
+                    <option value="" disabled>Select inquiry type</option>
+                    <option value="developer-lineup">Developer Lineup</option>
+                    <option value="off-market">Off-Market Acquisition</option>
+                    <option value="sovereign">Sovereign Advisory</option>
+                  </select>
+                </div>
+
+                <div className="flex flex-col gap-xs">
+                  <label className="font-label-caps text-[0.65rem] uppercase tracking-widest text-on-surface-variant">Capital Allocation</label>
+                  <select defaultValue="" className="bg-background border-b border-outline-variant/50 px-sm py-sm text-on-surface focus:outline-none focus:border-primary transition-colors appearance-none">
+                    <option value="" disabled>Select tier</option>
+                    <option value="2m-5m">AED 2M-5M</option>
+                    <option value="5m-15m">AED 5M-15M</option>
+                    <option value="15m-40m">AED 15M-40M</option>
+                    <option value="40m-plus">AED 40M+</option>
                   </select>
                 </div>
 
@@ -146,6 +155,9 @@ export default function ContactPage() {
                   Request Callback
                   <span className="material-symbols-outlined text-[1.1rem]">arrow_forward</span>
                 </button>
+                <p className="font-body-sm text-[0.75rem] text-on-surface-variant text-center mt-2">
+                  Submissions route directly to the Sovereign Desk (+971 4 312 8800).
+                </p>
               </form>
             </div>
 

@@ -30,91 +30,73 @@ export default function Home() { return ( <div className="bg-background font-bod
 </div>
 </section></FadeIn>
 
-<FadeIn><section className="relative w-full min-h-[780px] lg:min-h-[860px] flex items-center justify-center overflow-hidden -mt-20 pt-20">
+<FadeIn>
+  <section className="relative w-full bg-background pt-24 pb-12 lg:pt-32 lg:pb-12 overflow-hidden">
+    <div className="max-w-[1600px] mx-auto px-margin-mobile md:px-margin-tablet lg:px-margin-desktop">
+      <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 items-center">
+        {/* Left Side Content */}
+        <div className="flex flex-col items-start z-10">
+          <div className="font-label-caps text-label-caps uppercase tracking-[0.25em] text-primary mb-4 font-semibold">
+            DUBAI • DIFC — EST. 2019
+          </div>
+          <h1 className="font-display text-[3rem] md:text-[3.75rem] lg:text-[4.5rem] leading-[1.1] tracking-tight font-bold text-on-surface mb-2">
+            Built on Discretion.<br />
+            <span className="text-primary">Defined by Vision.</span>
+          </h1>
+          <p className="font-body-lg text-[1.05rem] text-on-surface-variant max-w-[38rem] mt-4 mb-8 leading-relaxed">
+            Founded in 2019 on quiet execution, Trueline now brings its private-market mastery into the open — through strategic alliances with Arcon and AG Developers, and a Private Office reserved for principals who value discretion as much as returns.
+          </p>
+          <div className="flex flex-wrap items-center gap-4">
+            <a href="/developments" className="bg-primary text-on-primary font-label-caps text-[0.8rem] uppercase px-6 py-3.5 font-bold tracking-widest hover:bg-primary-container transition-all">
+              EXPLORE DEVELOPMENTS
+            </a>
+            <a href="https://wa.me/97143128800" target="_blank" rel="noopener noreferrer" className="bg-transparent border border-outline text-on-surface font-label-caps text-[0.8rem] uppercase px-6 py-3.5 font-bold tracking-widest hover:bg-surface-container-low transition-all">
+              SPEAK TO THE SOVEREIGN DESK
+            </a>
+          </div>
+        </div>
 
-<div className="absolute inset-0 bg-cover bg-center transition-transform duration-1000 scale-105" data-alt="Dramatic nocturnal cinematic photograph of an ultra luxury penthouse fire-pit terrace overlooking the glowing illuminated skyline of Dubai at dusk, embers of golden warmth swirling into deep midnight blue ambient sky, rich shadows, moody high contrast architectural opulence" style={{ backgroundImage: 'url("https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?ixlib=rb-4.0.3&auto=format&fit=crop&w=2560&q=80")' }}>
-</div>
-<div className="absolute inset-0 bg-gradient-to-b from-background/90 via-background/60 to-background"></div>
-<div className="absolute inset-0 bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-primary/10 via-transparent to-surface-container-lowest/90"></div>
-<div className="relative z-10 w-full max-w-[1600px] mx-auto px-margin-mobile md:px-margin-tablet lg:px-margin-desktop py-3xl flex flex-col items-center text-center">
+        {/* Right Side Image */}
+        <div className="relative w-full h-[300px] lg:h-[450px] xl:h-[500px] rounded-sm overflow-hidden z-10 border border-outline/20">
+          <div 
+            className="absolute inset-0 bg-cover bg-center"
+            style={{ backgroundImage: 'url("https://images.unsplash.com/photo-1512453979798-5ea266f8880c?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80")' }}
+          ></div>
+        </div>
+      </div>
+    </div>
+  </section>
+</FadeIn>
 
-<div className="inline-flex items-center gap-xs px-md py-xxs bg-surface-container-high/80 border border-primary/30 backdrop-blur-md mb-md">
-<span className="w-1.5 h-1.5 bg-primary rounded-full animate-pulse"></span>
-<span className="font-label-caps text-label-caps uppercase tracking-[0.25em] text-primary">Sovereign &amp; Institutional Acquisitions</span>
-</div>
-
-<h1 className="font-display text-display-mobile md:text-display font-bold text-on-surface tracking-tight max-w-[64rem]">
-        Your Dream Home <span className="font-bold text-primary">Awaits</span>
-</h1>
-<p className="font-body-lg text-body-lg text-on-surface-variant max-w-[42rem] mt-sm mb-2xl">
-        The Journey To Modern Sovereign Living Starts Here At Trueline Estates.
-      </p>
-
-<div className="w-full max-w-[64rem] bg-surface-container/85 border border-primary/25 backdrop-blur-2xl shadow-[0_20px_60px_rgba(0,0,0,0.6)] p-md md:p-lg">
-
-<div className="flex items-center justify-start sm:justify-center gap-xs border-b border-outline-variant/30 pb-md mb-md overflow-x-auto" id="search-tabs">
-<button className="search-tab-btn active px-lg py-xs font-label-caps text-label-caps uppercase tracking-wider bg-primary text-on-primary font-semibold transition-all" type="button">
-            Buy
-          </button>
-<button className="search-tab-btn px-lg py-xs font-label-caps text-label-caps uppercase tracking-wider bg-surface-container-high text-on-surface hover:bg-primary/20 transition-all" type="button">
-            Rent
-          </button>
-<button className="search-tab-btn px-lg py-xs font-label-caps text-label-caps uppercase tracking-wider bg-surface-container-high text-on-surface hover:bg-primary/20 transition-all" type="button">
-            Off Plan
-          </button>
-<button className="search-tab-btn px-lg py-xs font-label-caps text-label-caps uppercase tracking-wider bg-surface-container-high text-on-surface hover:bg-primary/20 transition-all" type="button">
-            Commercial
-          </button>
-</div>
-
-<div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-[2fr_1fr_1fr_1fr_1.5fr] gap-sm items-center">
-
-<div className="relative flex items-center min-h-[56px] bg-surface-container-lowest border border-outline-variant/50 focus-within:border-primary transition-colors">
-<span className="material-symbols-outlined text-primary ml-sm text-[1.2rem] flex items-center">location_on</span>
-<input className="w-full h-full bg-transparent px-sm py-sm text-on-surface font-body-sm text-body-sm focus:outline-none placeholder:text-on-surface-variant/60" placeholder="Search Community or Landmark" type="text" defaultValue="Palm Jumeirah, Dubai" />
-</div>
-
-<div className="relative flex items-center min-h-[56px] bg-surface-container-lowest border border-outline-variant/50">
-<select defaultValue="2" className="w-full h-full bg-transparent text-on-surface font-body-sm text-body-sm px-sm py-sm focus:outline-none cursor-pointer appearance-none">
-<option className="bg-surface-container-high text-on-surface" value="">Price (All)</option>
-<option className="bg-surface-container-high text-on-surface" value="1">AED 2M - 5M</option>
-<option className="bg-surface-container-high text-on-surface" value="2">AED 5M - 15M</option>
-<option className="bg-surface-container-high text-on-surface" value="3">AED 15M - 40M</option>
-<option className="bg-surface-container-high text-on-surface" value="4">AED 40M+</option>
-</select>
-<span className="material-symbols-outlined absolute right-sm top-1/2 -translate-y-1/2 text-primary pointer-events-none text-[1.1rem]">expand_more</span>
-</div>
-
-<div className="relative flex items-center min-h-[56px] bg-surface-container-lowest border border-outline-variant/50">
-<select defaultValue="3" className="w-full h-full bg-transparent text-on-surface font-body-sm text-body-sm px-sm py-sm focus:outline-none cursor-pointer appearance-none">
-<option className="bg-surface-container-high text-on-surface" value="">Beds &amp; Baths</option>
-<option className="bg-surface-container-high text-on-surface" value="1">1 - 2 Bedrooms</option>
-<option className="bg-surface-container-high text-on-surface" value="2">3 - 4 Bedrooms</option>
-<option className="bg-surface-container-high text-on-surface" value="3">5+ Bedrooms</option>
-<option className="bg-surface-container-high text-on-surface" value="penthouse">Penthouses</option>
-</select>
-<span className="material-symbols-outlined absolute right-sm top-1/2 -translate-y-1/2 text-primary pointer-events-none text-[1.1rem]">expand_more</span>
-</div>
-
-<div className="relative flex items-center min-h-[56px] bg-surface-container-lowest border border-outline-variant/50">
-<select defaultValue="villa" className="w-full h-full bg-transparent text-on-surface font-body-sm text-body-sm px-sm py-sm focus:outline-none cursor-pointer appearance-none">
-<option className="bg-surface-container-high text-on-surface" value="">Property Type</option>
-<option className="bg-surface-container-high text-on-surface" value="villa">Sky Villa</option>
-<option className="bg-surface-container-high text-on-surface" value="mansion">Waterfront Mansion</option>
-<option className="bg-surface-container-high text-on-surface" value="penthouse">Duplex Penthouse</option>
-<option className="bg-surface-container-high text-on-surface" value="island">Private Island</option>
-</select>
-<span className="material-symbols-outlined absolute right-sm top-1/2 -translate-y-1/2 text-primary pointer-events-none text-[1.1rem]">expand_more</span>
-</div>
-
-<button className="w-full min-h-[56px] bg-primary text-on-primary font-label-caps text-label-caps uppercase px-sm font-semibold tracking-widest hover:bg-primary-fixed-dim active:scale-[0.99] transition-all flex items-center justify-center gap-xs leading-[1.1]">
-<span className="material-symbols-outlined text-[1.2rem]">search</span>
-<span className="whitespace-nowrap">FIND PROPERTIES</span>
-</button>
-</div>
-</div>
-</div>
-</section></FadeIn>
+<FadeIn>
+  <div className="w-full bg-surface-container-low border-b border-outline/20 -mt-2">
+    <div className="max-w-[1600px] mx-auto grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-4 gap-8 px-margin-mobile md:px-margin-tablet lg:px-margin-desktop py-8">
+      <div className="flex flex-col border-b sm:border-b-0 sm:border-r border-outline/20 pb-6 sm:pb-0 sm:pr-8">
+        <span className="font-headline-xl text-3xl font-bold text-primary mb-2">AED 2.4B+</span>
+        <span className="font-label-caps text-label-caps uppercase tracking-widest text-on-surface-variant">ASSET TRANSACTIONS</span>
+      </div>
+      <div className="flex flex-col border-b sm:border-b-0 xl:border-r border-outline/20 pb-6 sm:pb-0 sm:pr-8 xl:px-8">
+        <span className="font-headline-xl text-3xl font-bold text-primary mb-2">15+</span>
+        <span className="font-label-caps text-label-caps uppercase tracking-widest text-on-surface-variant">DEVELOPER MANDATES</span>
+      </div>
+      <div className="flex flex-col border-b sm:border-b-0 sm:border-r xl:border-r border-outline/20 pb-6 sm:pb-0 sm:pr-8 xl:px-8">
+        <span className="font-headline-xl text-3xl font-bold text-primary mb-2">2019</span>
+        <span className="font-label-caps text-label-caps uppercase tracking-widest text-on-surface-variant">FOUNDED IN DUBAI</span>
+      </div>
+      <div className="flex flex-col xl:pl-8">
+        <span className="font-headline-xl text-3xl font-bold text-primary mb-2">2</span>
+        <span className="font-label-caps text-label-caps uppercase tracking-widest text-on-surface-variant">CITIES • ABU DHABI & DUBAI</span>
+      </div>
+    </div>
+    <div className="w-full bg-background border-t border-outline/20">
+      <div className="max-w-[1600px] mx-auto px-margin-mobile md:px-margin-tablet lg:px-margin-desktop py-4 flex items-center justify-center sm:justify-start">
+        <span className="font-label-caps text-[0.75rem] uppercase tracking-widest text-primary font-semibold">
+          Regulated and advised in line with RICS, DLD, DIFC and ADGM standards.
+        </span>
+      </div>
+    </div>
+  </div>
+</FadeIn>
 
 <div className="w-full bg-surface-container-lowest border-y border-primary/20 py-sm overflow-hidden flex items-center relative whitespace-nowrap">
 <div className="flex items-center w-max animate-marquee font-label-caps text-label-caps uppercase tracking-[0.2em] text-on-surface-variant">
@@ -711,7 +693,7 @@ export default function Home() { return ( <div className="bg-background font-bod
 </div>
 <h3 className="font-headline-sm text-headline-sm font-bold text-on-surface mb-sm">Firas Najjar</h3>
 <p className="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
-              "I have worked with Trueline, specifically their private sovereign client desk. They handled our multi-property acquisition across Dubai and Abu Dhabi with absolute discretion, institutional underwriting, and zero friction. They are unquestionably the pinnacle of real estate advisory."
+              &quot;I have worked with Trueline, specifically their private sovereign client desk. They handled our multi-property acquisition across Dubai and Abu Dhabi with absolute discretion, institutional underwriting, and zero friction. They are unquestionably the pinnacle of real estate advisory.&quot;
             </p>
 </div>
 <div className="mt-lg pt-sm border-t border-outline-variant/20 font-label-caps text-[0.68rem] uppercase text-primary tracking-wider">
@@ -733,7 +715,7 @@ export default function Home() { return ( <div className="bg-background font-bod
 </div>
 <h3 className="font-headline-sm text-headline-sm font-bold text-on-surface mb-sm">Go Inoue</h3>
 <p className="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
-              "By far, this is the best asset management &amp; acquisition company in the UAE. Our family office relies on their advisors for clear yield projection, regulatory conveyance, and impeccable tenant management. Every single requirement was resolved with high precision."
+              &quot;By far, this is the best asset management &amp; acquisition company in the UAE. Our family office relies on their advisors for clear yield projection, regulatory conveyance, and impeccable tenant management. Every single requirement was resolved with high precision.&quot;
             </p>
 </div>
 <div className="mt-lg pt-sm border-t border-outline-variant/20 font-label-caps text-[0.68rem] uppercase text-primary tracking-wider">
@@ -752,7 +734,7 @@ export default function Home() { return ( <div className="bg-background font-bod
 </div>
 <h3 className="font-headline-sm text-headline-sm font-bold text-on-surface mb-sm">Elena Rostova</h3>
 <p className="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
-              "From securing off-market penthouse allocations on the Palm to setting up escrow custodial services, Trueline proved second to none. The level of confidentiality, speed, and market intelligence is unmatched in the Middle East region."
+              &quot;From securing off-market penthouse allocations on the Palm to setting up escrow custodial services, Trueline proved second to none. The level of confidentiality, speed, and market intelligence is unmatched in the Middle East region.&quot;
             </p>
 </div>
 <div className="mt-lg pt-sm border-t border-outline-variant/20 font-label-caps text-[0.68rem] uppercase text-primary tracking-wider">
@@ -841,7 +823,7 @@ export default function Home() { return ( <div className="bg-background font-bod
           ASK ANYTHING <span className="text-primary">FROM US</span>
 </h2>
 <p className="font-body-md text-body-md text-on-surface-variant mt-xs">
-          Everything you need to know about acquisition protocols, leasing laws, and sovereign property investments. Can't find the answer you're looking for? Please contact our private client team.
+          Everything you need to know about acquisition protocols, leasing laws, and sovereign property investments. Can&apos;t find the answer you&apos;re looking for? Please contact our private client team.
         </p>
 </div>
 
@@ -850,11 +832,11 @@ export default function Home() { return ( <div className="bg-background font-bod
 </section></FadeIn>
 
 
-<button aria-label="Scroll to top" className="fixed bottom-6 left-6 z-40 w-11 h-11 bg-primary text-on-primary shadow-2xl flex items-center justify-center hover:bg-primary-fixed-dim transition-all hover:scale-105 active:scale-95" onClick={() => { window.scrollTo({top: 0, behavior: 'smooth'}) }} title="Scroll to Top">
+<button aria-label="Scroll to top" className="fixed bottom-6 left-6 z-40 w-11 h-11 bg-primary text-on-primary shadow-2xl hidden sm:flex items-center justify-center hover:bg-primary-fixed-dim transition-all hover:scale-105 active:scale-95" onClick={() => { window.scrollTo({top: 0, behavior: 'smooth'}) }} title="Scroll to Top">
 <span className="material-symbols-outlined text-[1.3rem]">arrow_upward</span>
 </button>
 
-<div className="fixed bottom-6 right-6 z-40 flex flex-col gap-xs items-end">
+<div className="fixed bottom-6 right-6 z-40 hidden sm:flex flex-col gap-xs items-end">
 
 <a aria-label="Call concierge" className="w-12 h-12 bg-primary text-on-primary shadow-[0_4px_20px_rgba(0,0,0,0.5)] flex items-center justify-center hover:bg-primary-fixed-dim transition-all hover:scale-105 active:scale-95" href="tel:+97143128800" title="Direct Telephone Concierge">
 <span className="material-symbols-outlined text-[1.4rem]">call</span>

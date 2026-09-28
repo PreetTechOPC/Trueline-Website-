@@ -40,9 +40,11 @@ export default function Footer() {
             </div>
             <div className="h-20 w-px bg-primary/40 shrink-0 mt-1"></div>
             <div className="flex flex-col gap-xs pt-2">
-              <a href="tel:+971506321644" className="font-body-lg text-body-lg text-on-surface hover:text-primary transition-colors">+971 506321644</a>
-              <a href="tel:+971503312949" className="font-body-lg text-body-lg text-on-surface hover:text-primary transition-colors">+971 503312949</a>
-              <a href="tel:025833786" className="font-body-lg text-body-lg text-on-surface hover:text-primary transition-colors">02 5833786</a>
+              <span className="font-label-caps text-[0.65rem] uppercase tracking-widest text-on-surface-variant">Sovereign Desk</span>
+              <a href="tel:+97143128800" className="font-body-lg text-body-lg text-on-surface hover:text-primary transition-colors">+971 4 312 8800</a>
+              <a href="https://wa.me/97143128800" target="_blank" rel="noopener noreferrer" className="font-body-lg text-body-lg text-primary hover:text-white transition-colors mt-1 flex items-center gap-1">
+                <span className="material-symbols-outlined text-[1.2rem]">chat</span> WhatsApp
+              </a>
             </div>
           </div>
         </div>

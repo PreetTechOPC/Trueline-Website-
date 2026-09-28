@@ -44,15 +44,15 @@ export default function FAQAccordion() {
           >
             <button 
               onClick={() => toggleAccordion(index)}
-              className="faq-trigger w-full flex items-center justify-between text-left gap-md focus:outline-none"
+              className="faq-trigger w-full flex items-start sm:items-center justify-between text-left gap-md focus:outline-none"
             >
-              <span className={`font-headline-sm text-headline-sm font-medium transition-colors ${isOpen ? 'text-primary' : 'text-on-surface'}`}>
+              <span className={`font-headline-sm text-[1.1rem] sm:text-headline-sm font-medium transition-colors leading-snug ${isOpen ? 'text-primary' : 'text-on-surface'}`}>
                 {faq.question}
               </span>
               <motion.span 
                 animate={{ rotate: isOpen ? 180 : 0 }}
                 transition={{ duration: 0.3, ease: "easeInOut" }}
-                className="material-symbols-outlined text-primary text-[1.4rem]"
+                className="material-symbols-outlined text-primary text-[1.4rem] shrink-0 mt-1 sm:mt-0"
               >
                 expand_more
               </motion.span>
