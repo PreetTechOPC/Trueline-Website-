@@ -1,6 +1,8 @@
 "use client";
 import FadeIn from "@/components/FadeIn";
 import FAQAccordion from "@/components/FAQAccordion";
+import Link from "next/link";
+import Image from "next/image";
 export default function Home() { return ( <div className="bg-background font-body-md text-on-surface antialiased selection:bg-primary selection:text-on-primary"> <main className="w-full pt-20 bg-background"><div className="flex flex-col w-full text-on-surface bg-background select-none">
 
 <FadeIn><section className="w-full bg-surface-container-lowest/90 border-b border-primary/20 backdrop-blur-md px-margin-mobile md:px-margin-tablet lg:px-margin-desktop py-xs z-30">
@@ -202,6 +204,118 @@ export default function Home() { return ( <div className="bg-background font-bod
 </div>
 </section></FadeIn>
 
+{/* CURRENT ACTIVE PROJECT SPOTLIGHT */}
+<FadeIn>
+  <section className="relative w-full py-24 lg:py-32 bg-gradient-to-b from-[#030c29] via-[#07122e] to-[#040e2b] border-y border-primary/25 overflow-hidden">
+    <div className="absolute top-4 right-1/2 translate-x-1/2 font-headline-xl text-[5rem] md:text-[9rem] lg:text-[13rem] font-extrabold uppercase text-surface-container-highest/10 pointer-events-none select-none whitespace-nowrap">
+      ACTIVE LAUNCH
+    </div>
+    
+    <div className="relative z-10 max-w-[1600px] mx-auto px-margin-mobile md:px-margin-tablet lg:px-margin-desktop">
+      <div className="flex flex-col lg:flex-row items-center gap-10 lg:gap-16">
+        
+        {/* Left Column: Visual Showcase */}
+        <div className="w-full lg:w-1/2 relative">
+          <div className="relative w-full h-[360px] sm:h-[440px] lg:h-[500px] rounded-sm overflow-hidden border border-primary/40 shadow-[0_20px_50px_rgba(0,0,0,0.6)] group">
+            <Image 
+              src="/platinum-heights/hero_cover.jpg" 
+              alt="Platinum Heights - Current Active Project by Team Arcon" 
+              fill 
+              className="object-cover transition-transform duration-1000 group-hover:scale-105" 
+            />
+            <div className="absolute inset-0 bg-gradient-to-t from-[#030c29] via-transparent to-transparent opacity-80"></div>
+            
+            <div className="absolute top-4 left-4 bg-primary text-[#071C51] font-label-caps text-[0.7rem] uppercase px-3 py-1 font-bold tracking-widest shadow-lg">
+              CURRENT ACTIVE PROJECT
+            </div>
+
+            <div className="absolute bottom-4 left-4 right-4 p-4 bg-[#071C51]/95 backdrop-blur-md border border-primary/30 flex items-center justify-between">
+              <div>
+                <span className="font-label-caps text-[0.65rem] uppercase tracking-widest text-primary font-bold block">Developer</span>
+                <span className="font-headline-sm text-base font-bold text-[#F8F8F6]">Team Arcon Official Partnership</span>
+              </div>
+              <span className="font-label-caps text-[0.7rem] uppercase text-[#D8AA36] font-bold border border-[#D8AA36]/40 px-2.5 py-1">
+                100% Freehold
+              </span>
+            </div>
+          </div>
+        </div>
+
+        {/* Right Column: Project Highlights */}
+        <div className="w-full lg:w-1/2 flex flex-col items-start">
+          <div className="flex items-center gap-2 mb-3">
+            <span className="w-2 h-2 rounded-full bg-primary animate-pulse"></span>
+            <span className="font-label-caps text-[0.75rem] uppercase tracking-[0.25em] text-primary font-bold">
+              FLAGSHIP LAUNCH • EMIRATES CITY, AJMAN
+            </span>
+          </div>
+
+          <h2 className="font-display text-[2.25rem] md:text-[3.25rem] leading-[1.1] font-bold text-on-surface mb-4">
+            Platinum Heights <br />
+            <span className="text-primary font-light italic text-[1.85rem] md:text-[2.5rem]">By Team Arcon</span>
+          </h2>
+
+          <p className="font-body-md text-on-surface-variant leading-relaxed mb-6">
+            Rising 32 floors (approx. 122.75 M) as an iconic residential landmark on Ajman&apos;s evolving skyline. Featuring climate-responsive perforated facades, +24.05m sky jogging track, rooftop infinity pool, and semi-furnished 1-4 BHK duplex &amp; triplex residences with Arcon Connect.
+          </p>
+
+          {/* Quick Metrics Grid */}
+          <div className="grid grid-cols-2 sm:grid-cols-4 gap-4 w-full py-4 border-y border-outline/20 mb-8 bg-surface-container-low/40 p-3">
+            <div>
+              <span className="font-label-caps text-[0.65rem] uppercase tracking-wider text-on-surface-variant block">Configuration</span>
+              <span className="font-headline-sm text-lg font-bold text-primary">32 Floors</span>
+            </div>
+            <div>
+              <span className="font-label-caps text-[0.65rem] uppercase tracking-wider text-on-surface-variant block">Residences</span>
+              <span className="font-headline-sm text-lg font-bold text-primary">256 Units</span>
+            </div>
+            <div>
+              <span className="font-label-caps text-[0.65rem] uppercase tracking-wider text-on-surface-variant block">Wellness Track</span>
+              <span className="font-headline-sm text-lg font-bold text-primary">+24.05m</span>
+            </div>
+            <div>
+              <span className="font-label-caps text-[0.65rem] uppercase tracking-wider text-on-surface-variant block">Starting From</span>
+              <span className="font-headline-sm text-lg font-bold text-primary">AED 495K</span>
+            </div>
+          </div>
+
+          <div className="flex flex-wrap items-center gap-4">
+            <Link 
+              href="/developments/platinum-heights"
+              className="bg-primary text-[#071C51] font-label-caps text-[0.8rem] uppercase px-7 py-3.5 font-bold tracking-widest hover:bg-primary-container transition-all shadow-xl active:scale-95"
+            >
+              Explore Project Details
+            </Link>
+
+            <a 
+              href="/platinum_heights_brochure.pdf"
+              download="Platinum_Heights_Brochure.pdf"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="border border-primary/40 text-on-surface hover:text-primary font-label-caps text-[0.8rem] uppercase px-6 py-3.5 font-bold tracking-widest hover:bg-surface-container-high transition-all flex items-center gap-2"
+            >
+              <span className="material-symbols-outlined text-[1.1rem]">download</span>
+              <span>Brochure (PDF)</span>
+            </a>
+
+            <a 
+              href="https://wa.me/97143128800?text=Hello%20Trueline,%20I%20am%20inquiring%20about%20the%20active%20project%20Platinum%20Heights"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-[#25D366] hover:underline font-label-caps text-[0.75rem] uppercase tracking-widest font-bold flex items-center gap-1.5"
+            >
+              <span className="material-symbols-outlined text-[1.2rem]">chat</span>
+              <span>WhatsApp Sovereign Desk</span>
+            </a>
+          </div>
+
+        </div>
+
+      </div>
+    </div>
+  </section>
+</FadeIn>
+
 <FadeIn><section className="relative w-full py-4xl bg-surface-container-low overflow-hidden">
 
 <div className="absolute top-4 left-1/2 -translate-x-1/2 font-headline-xl text-[6.5rem] md:text-[11rem] lg:text-[14rem] font-extrabold uppercase text-surface-container-highest/15 pointer-events-none select-none whitespace-nowrap">
@@ -217,10 +331,10 @@ export default function Home() { return ( <div className="bg-background font-bod
 </h2>
 </div>
 <div className="flex items-center justify-between w-full md:w-auto pt-sm md:pt-0 gap-xl">
-<a className="font-label-caps text-label-caps uppercase text-primary hover:text-primary-fixed-dim inline-flex items-center gap-xs tracking-widest font-semibold group" href="#">
+<Link className="font-label-caps text-label-caps uppercase text-primary hover:text-primary-fixed-dim inline-flex items-center gap-xs tracking-widest font-semibold group" href="/developments">
 <span>VIEW ALL PROPERTIES</span>
 <span className="material-symbols-outlined text-[1.1rem] group-hover:translate-x-1 transition-transform">chevron_right</span>
-</a>
+</Link>
 <div className="flex items-center gap-xs">
 <button aria-label="Previous" onClick={() => { const s = document.getElementById('sale-slider'); if(s) s.scrollBy({ left: -400, behavior: 'smooth' }); }} className="w-10 h-10 border border-outline-variant/50 flex items-center justify-center text-on-surface hover:border-primary hover:text-primary transition-colors">
 <span className="material-symbols-outlined text-[1.2rem]">arrow_back</span>
@@ -233,6 +347,72 @@ export default function Home() { return ( <div className="bg-background font-bod
 </div>
 
 <div id="sale-slider" className="flex overflow-x-auto snap-x snap-mandatory gap-xl pb-sm" style={{ scrollbarWidth: 'none', msOverflowStyle: 'none' }}>
+
+{/* Platinum Heights - Current Active Project in Feed */}
+<div className="group bg-surface-container border-2 border-primary/60 hover:border-primary transition-all flex flex-col justify-between overflow-hidden shadow-2xl min-w-full md:min-w-[calc(50%-1rem)] lg:min-w-[calc(33.333%-1.33rem)] flex-shrink-0 snap-start relative">
+  <div className="relative h-64 overflow-hidden bg-surface-container-highest">
+    <div 
+      className="w-full h-full bg-cover bg-center transition-transform duration-700 ease-out group-hover:scale-105" 
+      style={{ backgroundImage: 'url("/platinum-heights/hero_cover.jpg")' }} 
+    />
+    <div className="absolute top-sm left-sm px-sm py-xxs bg-primary text-[#071C51] font-label-caps text-label-caps uppercase font-bold tracking-widest shadow-md">
+      Current Active Project
+    </div>
+    <div className="absolute top-sm right-sm px-sm py-xxs bg-surface-container-lowest/90 border border-primary/30 font-label-caps text-[0.65rem] uppercase text-primary font-semibold">
+      Team Arcon
+    </div>
+  </div>
+  <div className="p-lg flex flex-col flex-grow justify-between">
+    <div>
+      <div className="flex items-center gap-xs text-primary mb-xs">
+        <span className="material-symbols-outlined text-[1.1rem]">apartment</span>
+        <Link href="/developments/platinum-heights" className="font-headline-sm text-headline-sm font-semibold text-on-surface hover:text-primary transition-colors">
+          Platinum Heights
+        </Link>
+      </div>
+      <p className="font-body-sm text-body-sm text-on-surface-variant line-clamp-1 mb-xs">
+        32 Storeys | +24.05m Sky Jogging Track | Arcon Connect Smart Living
+      </p>
+      <div className="flex items-center gap-xs text-on-surface-variant font-label-sm text-label-sm mb-md">
+        <span className="material-symbols-outlined text-primary text-[1rem]">location_on</span>
+        <span className="truncate">Emirates City, Ajman, UAE (Direct E311)</span>
+      </div>
+
+      <div className="grid grid-cols-3 gap-xs py-sm border-y border-outline-variant/20 font-body-sm text-body-sm text-on-surface-variant mb-md">
+        <div className="flex items-center gap-xxs">
+          <span className="material-symbols-outlined text-primary text-[1rem]">bed</span>
+          <span>1 - 4 Beds</span>
+        </div>
+        <div className="flex items-center gap-xxs">
+          <span className="material-symbols-outlined text-primary text-[1rem]">bathtub</span>
+          <span>2 - 5 Baths</span>
+        </div>
+        <div className="flex items-center gap-xxs">
+          <span className="material-symbols-outlined text-primary text-[1rem]">square_foot</span>
+          <span>Up to 2,971 sqft</span>
+        </div>
+      </div>
+    </div>
+
+    <div className="flex items-center justify-between pt-xs">
+      <div>
+        <span className="font-label-caps text-[0.65rem] uppercase text-on-surface-variant block">Starting Price</span>
+        <span className="font-headline-sm text-headline-sm font-bold text-primary">AED 495,000</span>
+      </div>
+      <div className="flex items-center gap-xs">
+        <Link href="/developments/platinum-heights" className="px-3 py-1.5 bg-primary text-[#071C51] font-label-caps text-[0.7rem] uppercase font-bold tracking-wider hover:bg-primary-container transition-all">
+          Explore
+        </Link>
+        <a href="/platinum_heights_brochure.pdf" download="Platinum_Heights_Brochure.pdf" className="w-8 h-8 rounded-none border border-outline-variant/40 flex items-center justify-center text-on-surface-variant hover:text-primary hover:border-primary transition-colors" title="Download Brochure">
+          <span className="material-symbols-outlined text-[1rem]">download</span>
+        </a>
+        <a href="https://wa.me/97143128800?text=I%20am%20interested%20in%20Platinum%20Heights" target="_blank" rel="noopener noreferrer" className="w-8 h-8 rounded-none border border-outline-variant/40 flex items-center justify-center text-on-surface-variant hover:text-[#25D366] hover:border-[#25D366] transition-colors" title="WhatsApp Concierge">
+          <span className="material-symbols-outlined text-[1rem]">chat</span>
+        </a>
+      </div>
+    </div>
+  </div>
+</div>
 
 <div className="group bg-surface-container border border-primary/20 hover:border-primary/60 transition-all flex flex-col justify-between overflow-hidden shadow-lg min-w-full md:min-w-[calc(50%-1rem)] lg:min-w-[calc(33.333%-1.33rem)] flex-shrink-0 snap-start">
 <div className="relative h-64 overflow-hidden bg-surface-container-highest">
