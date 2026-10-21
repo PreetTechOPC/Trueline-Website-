@@ -3,62 +3,119 @@ export default function ContactPage() {
   return (
     <main className="w-full pt-20 bg-background flex flex-col min-h-screen">
       
-      {/* 2. Global Offices Grid */}
-      <FadeIn><section className="w-full py-4xl bg-surface-container-lowest border-y border-outline-variant/10">
-        <div className="max-w-[1600px] mx-auto px-margin-mobile md:px-margin-tablet lg:px-margin-desktop">
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-xl">
-            
-            {/* Dubai */}
-            <div className="bg-background border border-outline-variant/20 hover:border-primary/50 transition-colors p-xl flex flex-col group">
-              <span className="font-headline-md text-headline-md font-semibold text-on-surface mb-xs group-hover:text-primary transition-colors">Dubai</span>
-              <span className="font-label-caps text-[0.65rem] uppercase tracking-widest text-primary mb-lg">Global Headquarters</span>
-              <p className="font-body-sm text-body-sm text-on-surface-variant mb-xs">DIFC Gate Precinct 4, Level 18</p>
-              <p className="font-body-sm text-body-sm text-on-surface-variant mb-lg">Dubai, United Arab Emirates</p>
-              <div className="mt-auto pt-lg border-t border-outline-variant/10 flex items-center gap-xs">
-                <span className="material-symbols-outlined text-[1rem] text-primary">call</span>
-                <a href="tel:+97143128800" className="font-label-sm text-label-sm text-on-surface hover:text-primary transition-colors">+971 4 312 8800</a>
-              </div>
-            </div>
-
-            {/* London */}
-            <div className="bg-background border border-outline-variant/20 hover:border-primary/50 transition-colors p-xl flex flex-col group">
-              <span className="font-headline-md text-headline-md font-semibold text-on-surface mb-xs group-hover:text-primary transition-colors">London</span>
-              <span className="font-label-caps text-[0.65rem] uppercase tracking-widest text-primary mb-lg">European Desk</span>
-              <p className="font-body-sm text-body-sm text-on-surface-variant mb-xs">14 Grosvenor Square</p>
-              <p className="font-body-sm text-body-sm text-on-surface-variant mb-lg">Mayfair, London W1K 6LF, UK</p>
-              <div className="mt-auto pt-lg border-t border-outline-variant/10 flex items-center gap-xs">
-                <span className="material-symbols-outlined text-[1rem] text-primary">call</span>
-                <a href="tel:+442079460912" className="font-label-sm text-label-sm text-on-surface hover:text-primary transition-colors">+44 20 7946 0912</a>
-              </div>
-            </div>
-
-            {/* New York */}
-            <div className="bg-background border border-outline-variant/20 hover:border-primary/50 transition-colors p-xl flex flex-col group">
-              <span className="font-headline-md text-headline-md font-semibold text-on-surface mb-xs group-hover:text-primary transition-colors">New York</span>
-              <span className="font-label-caps text-[0.65rem] uppercase tracking-widest text-primary mb-lg">Americas Desk</span>
-              <p className="font-body-sm text-body-sm text-on-surface-variant mb-xs">767 Fifth Avenue</p>
-              <p className="font-body-sm text-body-sm text-on-surface-variant mb-lg">Manhattan, NY 10153, USA</p>
-              <div className="mt-auto pt-lg border-t border-outline-variant/10 flex items-center gap-xs">
-                <span className="material-symbols-outlined text-[1rem] text-primary">call</span>
-                <a href="tel:+12125550198" className="font-label-sm text-label-sm text-on-surface hover:text-primary transition-colors">+1 212 555 0198</a>
-              </div>
-            </div>
-
-            {/* Singapore */}
-            <div className="bg-background border border-outline-variant/20 hover:border-primary/50 transition-colors p-xl flex flex-col group">
-              <span className="font-headline-md text-headline-md font-semibold text-on-surface mb-xs group-hover:text-primary transition-colors">Singapore</span>
-              <span className="font-label-caps text-[0.65rem] uppercase tracking-widest text-primary mb-lg">Asia Pacific Desk</span>
-              <p className="font-body-sm text-body-sm text-on-surface-variant mb-xs">Marina Bay Financial Centre</p>
-              <p className="font-body-sm text-body-sm text-on-surface-variant mb-lg">Tower 2, Singapore 018983</p>
-              <div className="mt-auto pt-lg border-t border-outline-variant/10 flex items-center gap-xs">
-                <span className="material-symbols-outlined text-[1rem] text-primary">call</span>
-                <a href="tel:+6567182000" className="font-label-sm text-label-sm text-on-surface hover:text-primary transition-colors">+65 6718 2000</a>
-              </div>
-            </div>
-
+      {/* 1. Hero Header */}
+      <FadeIn>
+        <section className="relative w-full pt-16 pb-12 bg-background border-b border-outline-variant/10">
+          <div className="max-w-[1600px] mx-auto px-margin-mobile md:px-margin-tablet lg:px-margin-desktop">
+            <span className="font-label-caps text-label-caps uppercase tracking-[0.25em] text-primary block mb-3 font-semibold">
+              GLOBAL PRESENCE &amp; PRIVATE CONCIERGE
+            </span>
+            <h1 className="font-display text-[2.5rem] md:text-[3.75rem] lg:text-[4.25rem] font-bold text-on-surface leading-tight">
+              Dubai Global <span className="text-primary">Headquarters</span>
+            </h1>
+            <p className="font-body-lg text-[1.05rem] text-on-surface-variant max-w-[42rem] mt-4 leading-relaxed">
+              Operating from the Dubai International Financial Centre (DIFC), Trueline orchestrates high-value transactions, developer mandates, and private wealth advisory across the UAE.
+            </p>
           </div>
-        </div>
-      </section></FadeIn>
+        </section>
+      </FadeIn>
+
+      {/* 2. Global Headquarters Feature Cards */}
+      <FadeIn>
+        <section className="w-full py-16 lg:py-20 bg-surface-container-lowest border-b border-outline-variant/10">
+          <div className="max-w-[1600px] mx-auto px-margin-mobile md:px-margin-tablet lg:px-margin-desktop">
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+              
+              {/* Physical Location */}
+              <div className="bg-surface-container border border-outline-variant/30 hover:border-primary/50 transition-all p-8 md:p-10 flex flex-col justify-between group shadow-xl">
+                <div>
+                  <div className="w-12 h-12 rounded-full bg-primary/10 border border-primary/30 flex items-center justify-center text-primary mb-6 group-hover:bg-primary group-hover:text-on-primary transition-colors">
+                    <span className="material-symbols-outlined text-[1.4rem]">location_on</span>
+                  </div>
+                  <span className="font-label-caps text-[0.68rem] uppercase tracking-widest text-primary font-semibold block mb-1">
+                    GLOBAL HEADQUARTERS
+                  </span>
+                  <h3 className="font-headline-md text-xl md:text-2xl font-bold text-on-surface mb-4">
+                    Dubai DIFC
+                  </h3>
+                  <p className="font-body-md text-[0.95rem] text-on-surface-variant leading-relaxed">
+                    DIFC Gate Precinct 4, Level 18<br />
+                    Dubai International Financial Centre<br />
+                    Dubai, United Arab Emirates
+                  </p>
+                </div>
+                <div className="pt-6 mt-6 border-t border-outline-variant/20">
+                  <span className="font-label-caps text-[0.65rem] uppercase tracking-widest text-on-surface-variant/80">
+                    Prime Financial District
+                  </span>
+                </div>
+              </div>
+
+              {/* Direct Communications */}
+              <div className="bg-surface-container border border-outline-variant/30 hover:border-primary/50 transition-all p-8 md:p-10 flex flex-col justify-between group shadow-xl">
+                <div>
+                  <div className="w-12 h-12 rounded-full bg-primary/10 border border-primary/30 flex items-center justify-center text-primary mb-6 group-hover:bg-primary group-hover:text-on-primary transition-colors">
+                    <span className="material-symbols-outlined text-[1.4rem]">call</span>
+                  </div>
+                  <span className="font-label-caps text-[0.68rem] uppercase tracking-widest text-primary font-semibold block mb-1">
+                    SOVEREIGN DESK
+                  </span>
+                  <h3 className="font-headline-md text-xl md:text-2xl font-bold text-on-surface mb-4">
+                    Direct Contact
+                  </h3>
+                  <div className="flex flex-col gap-3 font-body-md text-[0.95rem]">
+                    <a href="tel:+971506321644" className="text-on-surface hover:text-primary transition-colors flex items-center gap-2">
+                      <span className="material-symbols-outlined text-primary text-[1rem]">call</span>
+                      <span className="font-semibold">+971 50 632 1644</span>
+                    </a>
+                    <a href="https://wa.me/971506321644" target="_blank" rel="noopener noreferrer" className="text-[#25D366] hover:underline flex items-center gap-2">
+                      <span className="material-symbols-outlined text-[1rem]">chat</span>
+                      <span className="font-semibold">WhatsApp Concierge</span>
+                    </a>
+                    <a href="mailto:concierge@trueline.com" className="text-on-surface-variant hover:text-primary transition-colors flex items-center gap-2">
+                      <span className="material-symbols-outlined text-primary text-[1rem]">mail</span>
+                      <span>concierge@trueline.com</span>
+                    </a>
+                  </div>
+                </div>
+                <div className="pt-6 mt-6 border-t border-outline-variant/20">
+                  <span className="font-label-caps text-[0.65rem] uppercase tracking-widest text-on-surface-variant/80">
+                    Direct Concierge Access
+                  </span>
+                </div>
+              </div>
+
+              {/* Operating Hours & Standards */}
+              <div className="bg-surface-container border border-outline-variant/30 hover:border-primary/50 transition-all p-8 md:p-10 flex flex-col justify-between group shadow-xl">
+                <div>
+                  <div className="w-12 h-12 rounded-full bg-primary/10 border border-primary/30 flex items-center justify-center text-primary mb-6 group-hover:bg-primary group-hover:text-on-primary transition-colors">
+                    <span className="material-symbols-outlined text-[1.4rem]">schedule</span>
+                  </div>
+                  <span className="font-label-caps text-[0.68rem] uppercase tracking-widest text-primary font-semibold block mb-1">
+                    CLIENT SERVICES
+                  </span>
+                  <h3 className="font-headline-md text-xl md:text-2xl font-bold text-on-surface mb-4">
+                    Executive Hours
+                  </h3>
+                  <p className="font-body-md text-[0.95rem] text-on-surface-variant leading-relaxed mb-3">
+                    Monday – Friday: 9:00 AM – 6:00 PM GST<br />
+                    Saturday – Sunday: Sovereign Desk On-Call
+                  </p>
+                  <p className="font-body-sm text-[0.8rem] text-on-surface-variant/80">
+                    Private consultations available by prior appointment.
+                  </p>
+                </div>
+                <div className="pt-6 mt-6 border-t border-outline-variant/20">
+                  <span className="font-label-caps text-[0.65rem] uppercase tracking-widest text-primary font-semibold">
+                    Regulated Brokerage (RICS &amp; DLD)
+                  </span>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </section>
+      </FadeIn>
 
       {/* 3. Direct Concierge & Inquiry Form */}
       <FadeIn><section className="w-full py-4xl bg-background relative">
@@ -76,17 +133,17 @@ export default function ContactPage() {
               </p>
               
               <div className="flex flex-col sm:flex-row gap-lg">
-                <a href="tel:+97143128800" className="group flex items-center gap-md bg-surface-container border border-outline-variant/30 hover:border-primary/50 p-lg transition-all w-full">
+                <a href="tel:+971506321644" className="group flex items-center gap-md bg-surface-container border border-outline-variant/30 hover:border-primary/50 p-lg transition-all w-full">
                   <div className="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center text-primary group-hover:bg-primary group-hover:text-on-primary transition-colors">
                     <span className="material-symbols-outlined">call</span>
                   </div>
                   <div>
                     <span className="font-label-caps text-[0.65rem] uppercase tracking-widest text-on-surface-variant block mb-xxs">Direct Line</span>
-                    <span className="font-label-lg font-semibold text-on-surface">+971 4 312 8800</span>
+                    <span className="font-label-lg font-semibold text-on-surface">+971 50 632 1644</span>
                   </div>
                 </a>
 
-                <a href="https://wa.me/97143128800" target="_blank" rel="noopener noreferrer" className="group flex items-center gap-md bg-[#25D366]/5 border border-[#25D366]/20 hover:border-[#25D366]/50 p-lg transition-all w-full">
+                <a href="https://wa.me/971506321644" target="_blank" rel="noopener noreferrer" className="group flex items-center gap-md bg-[#25D366]/5 border border-[#25D366]/20 hover:border-[#25D366]/50 p-lg transition-all w-full">
                   <div className="w-12 h-12 rounded-full bg-[#25D366]/10 flex items-center justify-center text-[#25D366] group-hover:bg-[#25D366] group-hover:text-white transition-colors">
                     <span className="material-symbols-outlined">chat</span>
                   </div>
@@ -156,7 +213,7 @@ export default function ContactPage() {
                   <span className="material-symbols-outlined text-[1.1rem]">arrow_forward</span>
                 </button>
                 <p className="font-body-sm text-[0.75rem] text-on-surface-variant text-center mt-2">
-                  Submissions route directly to the Sovereign Desk (+971 4 312 8800).
+                  Submissions route directly to the Sovereign Desk (+971 50 632 1644).
                 </p>
               </form>
             </div>

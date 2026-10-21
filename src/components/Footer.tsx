@@ -19,7 +19,6 @@ export default function Footer() {
             <Link href="/about" className="font-body-md text-on-surface-variant hover:text-primary transition-colors">About Us</Link>
             <Link href="/developments" className="font-body-md text-on-surface-variant hover:text-primary transition-colors">Developments</Link>
             <Link href="/advisory" className="font-body-md text-on-surface-variant hover:text-primary transition-colors">Advisory</Link>
-            <Link href="/private-office" className="font-body-md text-on-surface-variant hover:text-primary transition-colors">Private Office</Link>
             <Link href="/contact" className="font-body-md text-on-surface-variant hover:text-primary transition-colors">Contact</Link>
           </div>
           
@@ -41,8 +40,8 @@ export default function Footer() {
             <div className="h-20 w-px bg-primary/40 shrink-0 mt-1"></div>
             <div className="flex flex-col gap-xs pt-2">
               <span className="font-label-caps text-[0.65rem] uppercase tracking-widest text-on-surface-variant">Sovereign Desk</span>
-              <a href="tel:+97143128800" className="font-body-lg text-body-lg text-on-surface hover:text-primary transition-colors">+971 4 312 8800</a>
-              <a href="https://wa.me/97143128800" target="_blank" rel="noopener noreferrer" className="font-body-lg text-body-lg text-primary hover:text-white transition-colors mt-1 flex items-center gap-1">
+              <a href="tel:+971506321644" className="font-body-lg text-body-lg text-on-surface hover:text-primary transition-colors">+971 50 632 1644</a>
+              <a href="https://wa.me/971506321644" target="_blank" rel="noopener noreferrer" className="font-body-lg text-body-lg text-primary hover:text-white transition-colors mt-1 flex items-center gap-1">
                 <span className="material-symbols-outlined text-[1.2rem]">chat</span> WhatsApp
               </a>
             </div>

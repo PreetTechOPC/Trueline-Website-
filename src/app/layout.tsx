@@ -41,11 +41,11 @@ export default function RootLayout({
         
         {/* Mobile Sticky Action Tray */}
         <div className="fixed bottom-0 left-0 right-0 h-12 bg-[#071C51]/80 backdrop-blur-md border-t border-white/10 z-[100] flex items-center sm:hidden shadow-[0_-4px_10px_rgba(0,0,0,0.3)]">
-          <a href="tel:+97143128800" className="flex-1 flex items-center justify-center h-full border-r border-white/10 text-white hover:bg-white/5 active:bg-white/10 transition-colors">
+          <a href="tel:+971506321644" className="flex-1 flex items-center justify-center h-full border-r border-white/10 text-white hover:bg-white/5 active:bg-white/10 transition-colors">
             <span className="material-symbols-outlined text-[1.1rem] mr-2 text-primary">call</span>
             <span className="font-label-caps text-[0.65rem] uppercase tracking-widest mt-0.5">Call Concierge</span>
           </a>
-          <a href="https://wa.me/97143128800" target="_blank" rel="noopener noreferrer" className="flex-1 flex items-center justify-center h-full text-white hover:bg-white/5 active:bg-white/10 transition-colors">
+          <a href="https://wa.me/971506321644" target="_blank" rel="noopener noreferrer" className="flex-1 flex items-center justify-center h-full text-white hover:bg-white/5 active:bg-white/10 transition-colors">
             <span className="material-symbols-outlined text-[1.1rem] mr-2 text-[#25D366]">chat</span>
             <span className="font-label-caps text-[0.65rem] uppercase tracking-widest mt-0.5">WhatsApp</span>
           </a>

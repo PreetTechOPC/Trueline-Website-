@@ -64,7 +64,7 @@ export default function AboutPage() {
                 <span className="font-label-caps text-label-caps uppercase text-primary tracking-widest block mb-md font-semibold">The Quiet Force Behind the Skyline</span>
                 
                 <div className="border-l-2 border-primary pl-md mb-lg">
-                  <p className="font-headline-sm text-[1.4rem] text-primary italic font-medium leading-relaxed">
+                  <p className="font-headline-sm text-[1.4rem] text-primary font-medium leading-relaxed">
                     "Founded in 2019. Built on quiet execution, now defining the modern skyline."
                   </p>
                 </div>
@@ -98,7 +98,7 @@ export default function AboutPage() {
               
               <div className="bg-surface-container border border-outline/20 p-lg lg:p-xl -mt-12 relative z-10 ml-4 mr-4 lg:ml-8 lg:-ml-12 shadow-2xl">
                 <div className="border-l-2 border-primary pl-md mb-md">
-                  <p className="font-headline-sm text-[1.15rem] text-primary italic font-medium leading-relaxed">
+                  <p className="font-headline-sm text-[1.15rem] text-primary font-medium leading-relaxed">
                     "True leadership is not about adapting to the skyline — it is about having the courage to build what comes next."
                   </p>
                 </div>

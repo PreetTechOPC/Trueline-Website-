@@ -199,23 +199,23 @@ export default function PlatinumHeightsPage() {
                 </div>
 
                 {/* Action CTAs */}
-                <div className="flex flex-wrap items-center gap-4">
+                <div className="flex flex-wrap items-center gap-3 sm:gap-4 w-full sm:w-auto">
                   <a 
                     href="/platinum_heights_brochure.pdf" 
                     download="Platinum_Heights_Official_Brochure.pdf"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="inline-flex items-center gap-2 bg-primary text-on-primary font-label-caps text-[0.8rem] uppercase px-7 py-4 font-bold tracking-widest hover:bg-primary-container transition-all shadow-xl active:scale-95"
+                    className="w-full sm:w-auto justify-center inline-flex items-center gap-2 bg-primary text-on-primary font-label-caps text-xs sm:text-[0.8rem] uppercase px-6 sm:px-7 py-3.5 sm:py-4 font-bold tracking-widest hover:bg-primary-container transition-all shadow-xl active:scale-95"
                   >
                     <span className="material-symbols-outlined text-[1.2rem]">download</span>
                     <span>Download Brochure (PDF)</span>
                   </a>
                   
                   <a 
-                    href="https://wa.me/97143128800?text=Hello%20Trueline,%20I%20would%20like%20to%20inquire%20about%20Platinum%20Heights%20Ajman"
+                    href="https://wa.me/971506321644?text=Hello%20Trueline,%20I%20would%20like%20to%20inquire%20about%20Platinum%20Heights%20Ajman"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="inline-flex items-center gap-2 bg-[#25D366] text-[#030c29] font-label-caps text-[0.8rem] uppercase px-6 py-4 font-bold tracking-widest hover:brightness-110 transition-all shadow-xl active:scale-95"
+                    className="w-full sm:w-auto justify-center inline-flex items-center gap-2 bg-[#25D366] text-[#030c29] font-label-caps text-xs sm:text-[0.8rem] uppercase px-5 sm:px-6 py-3.5 sm:py-4 font-bold tracking-widest hover:brightness-110 transition-all shadow-xl active:scale-95"
                   >
                     <span className="material-symbols-outlined text-[1.2rem]">chat</span>
                     <span>Direct Concierge WhatsApp</span>
@@ -223,9 +223,9 @@ export default function PlatinumHeightsPage() {
 
                   <Link 
                     href="/contact" 
-                    className="inline-flex items-center gap-2 bg-transparent border border-primary/40 text-on-surface hover:text-primary font-label-caps text-[0.8rem] uppercase px-6 py-4 font-bold tracking-widest hover:bg-surface-container-high transition-all"
+                    className="w-full sm:w-auto justify-center inline-flex items-center gap-2 bg-transparent border border-primary/40 text-on-surface hover:text-primary font-label-caps text-xs sm:text-[0.8rem] uppercase px-5 sm:px-6 py-3.5 sm:py-4 font-bold tracking-widest hover:bg-surface-container-high transition-all"
                   >
-                    <span>Request Floor Plan & Specs</span>
+                    <span>Request Floor Plan &amp; Specs</span>
                     <span className="material-symbols-outlined text-[1.1rem]">arrow_forward</span>
                   </Link>
                 </div>
@@ -475,7 +475,7 @@ export default function PlatinumHeightsPage() {
                   </a>
 
                   <a 
-                    href={`https://wa.me/97143128800?text=I%20am%20interested%20in%20${encodeURIComponent(selectedUnit.title)}%20at%20Platinum%20Heights`}
+                    href={`https://wa.me/971506321644?text=I%20am%20interested%20in%20${encodeURIComponent(selectedUnit.title)}%20at%20Platinum%20Heights`}
                     target="_blank"
                     rel="noopener noreferrer"
                     className="inline-flex items-center gap-2 border border-outline text-on-surface hover:text-primary font-label-caps text-[0.75rem] uppercase px-5 py-3 font-bold tracking-widest hover:bg-surface-container-high transition-all"
@@ -866,7 +866,7 @@ export default function PlatinumHeightsPage() {
               </a>
 
               <a 
-                href="https://wa.me/97143128800?text=I%20would%20like%20to%20register%20interest%20for%20Platinum%20Heights%20Ajman"
+                href="https://wa.me/971506321644?text=I%20would%20like%20to%20register%20interest%20for%20Platinum%20Heights%20Ajman"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-flex items-center gap-2 bg-[#25D366] text-[#030c29] font-label-caps text-[0.85rem] uppercase px-8 py-4 font-bold tracking-widest hover:brightness-110 transition-all shadow-xl"
@@ -876,11 +876,11 @@ export default function PlatinumHeightsPage() {
               </a>
 
               <a 
-                href="tel:+97143128800"
+                href="tel:+971506321644"
                 className="inline-flex items-center gap-2 bg-transparent border border-outline text-on-surface font-label-caps text-[0.85rem] uppercase px-7 py-4 font-bold tracking-widest hover:bg-surface-container-high transition-all"
               >
                 <span className="material-symbols-outlined text-[1.2rem]">call</span>
-                <span>+971 4 312 8800</span>
+                <span>+971 50 632 1644</span>
               </a>
             </div>
 

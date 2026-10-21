@@ -22,34 +22,19 @@ const developmentsList = [
     projectUrl: "/developments/platinum-heights"
   },
   {
-    id: "arcon-horizon",
-    title: "The Arcon Horizon Sky Residences",
-    developer: "Team Arcon",
-    tag: "Arcon Lineup",
-    badge: "VIP LAUNCH",
-    isCurrentActive: false,
-    image: "/dev_card_1.jpg",
-    location: "Downtown / Business Bay Canal, Dubai",
-    description: "Private plunge pools, panoramic double-height glass, and Italian joinery. 2 to 4-bed sky duplexes overlooking the canal skyline.",
-    specs: "Sky Duplexes · Panoramic Canal Vistas",
-    price: "From AED 4,200,000 · 60/40 Payment Plan",
-    brochureUrl: "#",
-    projectUrl: "/contact"
-  },
-  {
-    id: "ag-signature",
-    title: "AG Signature Terraces",
-    developer: "AG Developers",
+    id: "ag-g4-residences",
+    title: "AG G+4 Residences",
+    developer: "AG Development",
     tag: "AG Developers",
-    badge: "HIGH-YIELD",
+    badge: "NEW LAUNCH",
     isCurrentActive: false,
-    image: "/corporate_background.jpg",
-    location: "Meydan / MBR City Corridor, Dubai",
-    description: "Lagoon-facing private terraces, wellness suites, and high-yield investor allocations. 1 to 3-bed luxury suites in an institutional masterplan.",
-    specs: "1 to 3-Bed Suites · Crystal Lagoon",
-    price: "From AED 1,850,000 · 8.4% Projected Yield",
-    brochureUrl: "#",
-    projectUrl: "/contact"
+    image: "/ag-group/page_3.png",
+    location: "Prime UAE Residential Corridor",
+    description: "Boutique low-rise residential enclave featuring fifth-floor luxury 2BR penthouse residences with expansive private sky terraces up to 844 sq.ft, 207 sq.m shared rooftop garden with firepit, and bespoke interiors curated by Oscar Andreu and B&D Interiors.",
+    specs: "G+4 Floors · 2BR Penthouse Suites · Sky Terraces",
+    price: "From AED 1,150,000 · Tailored Payment Structure",
+    brochureUrl: "/AG GROUP.pdf",
+    projectUrl: "/developments/ag-residences"
   }
 ];
 
@@ -107,7 +92,7 @@ export default function DevelopmentsPage() {
                   : "text-on-surface-variant hover:text-on-surface hover:bg-white/5"
               }`}
             >
-              Arcon Lineup (2)
+              Arcon Lineup ({developmentsList.filter(d => d.tag === "Arcon Lineup").length})
             </button>
             <button 
               onClick={() => setActiveFilter("AG Developers")}
@@ -117,7 +102,7 @@ export default function DevelopmentsPage() {
                   : "text-on-surface-variant hover:text-on-surface hover:bg-white/5"
               }`}
             >
-              AG Developers (1)
+              AG Developers ({developmentsList.filter(d => d.tag === "AG Developers").length})
             </button>
           </div>
         </div>
@@ -186,10 +171,10 @@ export default function DevelopmentsPage() {
                     </div>
                   </div>
 
-                  <div className="flex flex-wrap items-center gap-4">
+                  <div className="flex flex-wrap items-center gap-3 sm:gap-4 w-full sm:w-auto">
                     <Link 
                       href="/developments/platinum-heights"
-                      className="bg-primary text-[#071C51] font-label-caps text-[0.75rem] uppercase px-6 py-3 font-bold tracking-widest hover:bg-primary-container transition-all shadow-lg"
+                      className="w-full sm:w-auto text-center bg-primary text-[#071C51] font-label-caps text-xs sm:text-[0.75rem] uppercase px-5 sm:px-6 py-3 font-bold tracking-widest hover:bg-primary-container transition-all shadow-lg"
                     >
                       Explore Project Details &amp; Floor Plans →
                     </Link>
@@ -199,17 +184,17 @@ export default function DevelopmentsPage() {
                       download="Platinum_Heights_Brochure.pdf"
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="border border-primary/40 text-white hover:text-primary font-label-caps text-[0.75rem] uppercase px-5 py-3 font-semibold tracking-widest hover:bg-white/5 transition-all flex items-center gap-2"
+                      className="w-full sm:w-auto justify-center border border-primary/40 text-white hover:text-primary font-label-caps text-xs sm:text-[0.75rem] uppercase px-4 sm:px-5 py-3 font-semibold tracking-widest hover:bg-white/5 transition-all flex items-center gap-2"
                     >
                       <span className="material-symbols-outlined text-[1rem]">download</span>
                       <span>Brochure (PDF)</span>
                     </a>
 
                     <a 
-                      href="https://wa.me/97143128800?text=I%20am%20interested%20in%20Platinum%20Heights%20Ajman"
+                      href="https://wa.me/971506321644?text=I%20am%20interested%20in%20Platinum%20Heights%20Ajman"
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="text-[#25D366] hover:underline font-label-caps text-[0.75rem] uppercase tracking-wider font-bold flex items-center gap-1"
+                      className="w-full sm:w-auto justify-center text-[#25D366] hover:underline font-label-caps text-xs sm:text-[0.75rem] uppercase tracking-wider font-bold flex items-center gap-1 py-1"
                     >
                       <span className="material-symbols-outlined text-[1.1rem]">chat</span>
                       <span>Inquire via WhatsApp</span>
@@ -315,7 +300,7 @@ export default function DevelopmentsPage() {
                           </a>
                         ) : (
                           <a 
-                            href="https://wa.me/97143128800"
+                            href="https://wa.me/971506321644"
                             target="_blank"
                             rel="noopener noreferrer"
                             className="font-label-sm text-[0.85rem] text-primary hover:text-[#071C51] font-bold flex items-center gap-1 transition-colors"
