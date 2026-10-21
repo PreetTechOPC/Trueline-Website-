@@ -10,10 +10,10 @@ export default function AboutPage() {
       <FadeIn>
         <section className="relative w-full bg-background pt-24 pb-12 lg:pt-40 lg:pb-32 overflow-hidden">
           {/* Subtle gradient glow in background */}
-          <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top_right,_var(--tw-gradient-stops))] from-primary/10 via-transparent to-transparent opacity-80 pointer-events-none"></div>
+          <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top_right,var(--tw-gradient-stops))] from-primary/10 via-transparent to-transparent opacity-80 pointer-events-none"></div>
           
           <div className="relative z-10 max-w-[1600px] mx-auto px-margin-mobile md:px-margin-tablet lg:px-margin-desktop">
-            <div className="flex flex-col items-start max-w-[48rem]">
+            <div className="flex flex-col items-start max-w-192">
               <div className="font-label-caps text-label-caps uppercase tracking-[0.25em] text-primary mb-6 font-semibold">
                 ESTABLISHED 2019 • DUBAI DIFC
               </div>
@@ -87,7 +87,7 @@ export default function AboutPage() {
 
             {/* Right Column: Leadership Quote & Image */}
             <div className="lg:col-span-5 flex flex-col gap-lg">
-              <div className="relative h-[450px] w-full rounded-sm overflow-hidden shadow-2xl bg-surface-container-high flex items-center justify-center text-center">
+              <div className="relative h-112.5 w-full rounded-sm overflow-hidden shadow-2xl bg-surface-container-high flex items-center justify-center text-center">
                 <Image 
                   src="/about-image.png" 
                   alt="Leadership" 
@@ -120,7 +120,7 @@ export default function AboutPage() {
             <h2 className="font-headline-lg text-headline-lg uppercase font-semibold text-on-surface mb-xl">
               Progress with <span className="text-primary">Responsibility</span>
             </h2>
-            <p className="font-body-md text-body-md text-on-surface-variant max-w-[48rem] mx-auto mb-2xl">
+            <p className="font-body-md text-body-md text-on-surface-variant max-w-192 mx-auto mb-2xl">
               Sustainable value creation remains central to the Office’s philosophy. Its commitment to ESG principles, transparent governance, and environmental stewardship reflects a broader belief that true leadership is measured by the lasting impact it leaves behind.
             </p>
             
@@ -161,7 +161,7 @@ export default function AboutPage() {
           <h2 className="font-headline-lg text-headline-lg uppercase font-semibold text-on-surface mb-md">
             INITIATE A <span className="text-primary">RELATIONSHIP</span>
           </h2>
-          <p className="font-body-md text-body-md text-on-surface-variant max-w-[32rem] mb-xl">
+          <p className="font-body-md text-body-md text-on-surface-variant max-w-128 mb-xl">
             For partnership discussions, investment opportunities, strategic collaborations, or general enquiries, we invite you to connect with us.
           </p>
           <Link href="/contact" className="inline-flex bg-primary text-on-primary font-label-caps text-label-caps uppercase px-2xl py-md font-semibold tracking-widest hover:bg-primary-fixed-dim transition-all items-center justify-center gap-sm shadow-xl active:scale-95">

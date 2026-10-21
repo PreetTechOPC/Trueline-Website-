@@ -37,7 +37,7 @@ export default function Home() { return ( <div className="bg-background font-bod
             Built on Discretion.<br />
             <span className="text-primary">Defined by Vision.</span>
           </h1>
-          <p className="font-body-lg text-[0.95rem] sm:text-[1.05rem] text-on-surface-variant max-w-[38rem] mt-3 sm:mt-4 mb-6 sm:mb-8 leading-relaxed">
+          <p className="font-body-lg text-[0.95rem] sm:text-[1.05rem] text-on-surface-variant max-w-152 mt-3 sm:mt-4 mb-6 sm:mb-8 leading-relaxed">
             Founded in 2019 on quiet execution, Trueline now brings its private-market mastery into the open — through strategic alliances with Arcon and AG Developers for principals who value discretion as much as returns.
           </p>
           <div className="flex flex-wrap items-center gap-3 sm:gap-4 w-full sm:w-auto">
@@ -51,7 +51,7 @@ export default function Home() { return ( <div className="bg-background font-bod
         </div>
 
         {/* Right Side Image */}
-        <div className="relative w-full h-[260px] sm:h-[350px] lg:h-[450px] xl:h-[500px] rounded-sm overflow-hidden z-10 border border-outline/20">
+        <div className="relative w-full h-65 sm:h-87.5 lg:h-112.5 xl:h-125 rounded-sm overflow-hidden z-10 border border-outline/20">
           <div 
             className="absolute inset-0 bg-cover bg-center"
             style={{ backgroundImage: 'url("https://images.unsplash.com/photo-1512453979798-5ea266f8880c?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80")' }}
@@ -94,7 +94,7 @@ export default function Home() { return ( <div className="bg-background font-bod
 
 <div className="w-full bg-surface-container-lowest border-y border-primary/20 py-sm overflow-hidden flex items-center relative whitespace-nowrap">
 <div className="flex items-center w-max animate-marquee font-label-caps text-label-caps uppercase tracking-[0.2em] text-on-surface-variant">
-  <div className="flex items-center gap-xl px-xl flex-shrink-0 whitespace-nowrap">
+  <div className="flex items-center gap-xl px-xl shrink-0 whitespace-nowrap">
     <span className="flex items-center gap-sm whitespace-nowrap"><span className="text-primary font-bold">/</span> WATERFRONT VILLAS</span>
     <span className="flex items-center gap-sm whitespace-nowrap"><span className="text-primary font-bold">/</span> INSTITUTIONAL INVESTMENTS</span>
     <span className="flex items-center gap-sm whitespace-nowrap"><span className="text-primary font-bold">/</span> COMMERCIAL &amp; OFF-PLAN HUBS</span>
@@ -108,7 +108,7 @@ export default function Home() { return ( <div className="bg-background font-bod
     <span className="flex items-center gap-sm whitespace-nowrap"><span className="text-primary font-bold">/</span> PRIVATE SOVEREIGN ISLANDS</span>
     <span className="flex items-center gap-sm whitespace-nowrap"><span className="text-primary font-bold">/</span> ADVISORY ACQUISITION</span>
   </div>
-  <div className="flex items-center gap-xl px-xl flex-shrink-0 whitespace-nowrap">
+  <div className="flex items-center gap-xl px-xl shrink-0 whitespace-nowrap">
     <span className="flex items-center gap-sm whitespace-nowrap"><span className="text-primary font-bold">/</span> WATERFRONT VILLAS</span>
     <span className="flex items-center gap-sm whitespace-nowrap"><span className="text-primary font-bold">/</span> INSTITUTIONAL INVESTMENTS</span>
     <span className="flex items-center gap-sm whitespace-nowrap"><span className="text-primary font-bold">/</span> COMMERCIAL &amp; OFF-PLAN HUBS</span>
@@ -131,7 +131,7 @@ export default function Home() { return ( <div className="bg-background font-bod
       TRUSTED PARTNERS
     </div>
 <div className="relative z-10 max-w-[1600px] mx-auto px-margin-mobile md:px-margin-tablet lg:px-margin-desktop">
-<div className="text-center max-w-[56rem] mx-auto mb-3xl">
+<div className="text-center max-w-224 mx-auto mb-3xl">
 <h2 className="font-headline-lg text-headline-lg uppercase font-semibold text-on-surface tracking-wide">
           YOUR TRUSTED REAL ESTATE <span className="text-primary">PARTNERS</span>
 </h2>
@@ -140,16 +140,16 @@ export default function Home() { return ( <div className="bg-background font-bod
         </p>
 </div>
 
-<div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-md min-h-[520px]">
+<div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-md min-h-130">
 
-<div className="md:col-span-2 lg:col-span-7 relative min-h-[340px] md:min-h-[400px] lg:h-full group overflow-hidden border border-primary/30 bg-surface-container">
+<div className="md:col-span-2 lg:col-span-7 relative min-h-85 md:min-h-100 lg:h-full group overflow-hidden border border-primary/30 bg-surface-container">
 <div className="absolute inset-0 bg-cover bg-center transition-transform duration-700 group-hover:scale-105" data-alt="Dusk panoramic view of Dubai canal skyline with Burj Khalifa and modern skyscrapers reflecting in turquoise blue water, vibrant amber sunset glowing across futuristic glass towers" style={{ backgroundImage: 'url("https://images.unsplash.com/photo-1512453979798-5ea266f8880c?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80")' }}>
 </div>
-<div className="absolute inset-0 bg-gradient-to-t from-surface-container-lowest via-surface-container-lowest/30 to-transparent"></div>
+<div className="absolute inset-0 bg-linear-to-t from-surface-container-lowest via-surface-container-lowest/30 to-transparent"></div>
 <div className="absolute bottom-0 left-0 p-6 sm:p-xl flex flex-col items-start">
 <span className="px-sm py-xxs bg-primary text-on-primary font-label-caps text-label-caps uppercase font-semibold mb-xs">Principal UAE Hub</span>
 <h3 className="font-headline-md text-2xl sm:text-headline-md font-bold text-on-surface uppercase">Dubai</h3>
-<p className="font-body-sm text-body-sm text-on-surface-variant max-w-[28rem] mt-xs hidden sm:block">
+<p className="font-body-sm text-body-sm text-on-surface-variant max-w-112 mt-xs hidden sm:block">
               Downtown, Palm Jumeirah, DIFC &amp; Emirates Hills. Access exclusive confidential off-market allocations.
             </p>
 <a className="inline-flex items-center gap-xs font-label-caps text-label-caps uppercase text-primary mt-sm group-hover:translate-x-1 transition-transform" href="/developments">
@@ -159,14 +159,14 @@ export default function Home() { return ( <div className="bg-background font-bod
 </div>
 </div>
 
-<div className="md:col-span-1 lg:col-span-3 relative min-h-[260px] md:min-h-[300px] lg:h-full group overflow-hidden border border-outline-variant/30 bg-surface-container">
+<div className="md:col-span-1 lg:col-span-3 relative min-h-65 md:min-h-75 lg:h-full group overflow-hidden border border-outline-variant/30 bg-surface-container">
 <div className="absolute inset-0 bg-cover bg-center grayscale group-hover:grayscale-0 transition-all duration-700 group-hover:scale-105" data-alt="Black and white modern architectural photography of Saadiyat Island and Al Maryah financial towers in Abu Dhabi, soaring geometry against dramatic sky" style={{ backgroundImage: 'url("https://images.unsplash.com/photo-1546412414-8035e1776c9a?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80")' }}>
 </div>
-<div className="absolute inset-0 bg-gradient-to-t from-surface-container-lowest via-surface-container-lowest/40 to-transparent"></div>
+<div className="absolute inset-0 bg-linear-to-t from-surface-container-lowest via-surface-container-lowest/40 to-transparent"></div>
 <div className="absolute bottom-0 left-0 p-6 sm:p-lg flex flex-col items-start">
 <span className="px-sm py-xxs bg-surface-container-highest text-on-surface-variant font-label-caps text-label-caps uppercase font-semibold mb-xs">Capital Hub</span>
 <h3 className="font-headline-sm text-xl sm:text-headline-sm font-bold text-on-surface uppercase">Abu Dhabi</h3>
-<p className="font-body-sm text-body-sm text-on-surface-variant max-w-[20rem] mt-xs">
+<p className="font-body-sm text-body-sm text-on-surface-variant max-w-80 mt-xs">
               Saadiyat Cultural District &amp; Al Maryah Island trophy residences.
             </p>
 <a className="inline-flex items-center gap-xs font-label-caps text-label-caps uppercase text-primary mt-sm group-hover:translate-x-1 transition-transform" href="/developments">
@@ -176,10 +176,10 @@ export default function Home() { return ( <div className="bg-background font-bod
 </div>
 </div>
 
-<div className="md:col-span-1 lg:col-span-2 relative min-h-[260px] md:min-h-[300px] lg:h-full group overflow-hidden border border-outline-variant/30 bg-surface-container">
+<div className="md:col-span-1 lg:col-span-2 relative min-h-65 md:min-h-75 lg:h-full group overflow-hidden border border-outline-variant/30 bg-surface-container">
 <div className="absolute inset-0 bg-cover bg-center grayscale group-hover:grayscale-0 transition-all duration-700 group-hover:scale-105" data-alt="Architectural aerial view of Marjan Island in Ras Al Khaimah, clean turquoise coastline with luxury beachfront resorts and white sand beaches" style={{ backgroundImage: 'url("https://images.unsplash.com/photo-1571896349842-33c89424de2d?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80")' }}>
 </div>
-<div className="absolute inset-0 bg-gradient-to-t from-surface-container-lowest via-surface-container-lowest/50 to-transparent"></div>
+<div className="absolute inset-0 bg-linear-to-t from-surface-container-lowest via-surface-container-lowest/50 to-transparent"></div>
 <div className="absolute bottom-0 left-0 p-6 sm:p-lg flex flex-col items-start">
 <span className="px-sm py-xxs bg-surface-container-highest text-on-surface-variant font-label-caps text-label-caps uppercase font-semibold mb-xs">Emerging</span>
 <h3 className="font-headline-sm text-xl sm:text-headline-sm font-bold text-on-surface uppercase">RAK</h3>
@@ -198,7 +198,7 @@ export default function Home() { return ( <div className="bg-background font-bod
 
 {/* CURRENT ACTIVE PROJECT SPOTLIGHT */}
 <FadeIn>
-  <section className="relative w-full py-24 lg:py-32 bg-gradient-to-b from-[#030c29] via-[#07122e] to-[#040e2b] border-y border-primary/25 overflow-hidden">
+  <section className="relative w-full py-24 lg:py-32 bg-linear-to-b from-[#030c29] via-[#07122e] to-[#040e2b] border-y border-primary/25 overflow-hidden">
     <div className="absolute top-4 right-1/2 translate-x-1/2 font-headline-xl text-[5rem] md:text-[9rem] lg:text-[13rem] font-extrabold uppercase text-surface-container-highest/10 pointer-events-none select-none whitespace-nowrap">
       ACTIVE LAUNCH
     </div>
@@ -208,14 +208,14 @@ export default function Home() { return ( <div className="bg-background font-bod
         
         {/* Left Column: Visual Showcase */}
         <div className="w-full lg:w-1/2 relative">
-          <div className="relative w-full h-[360px] sm:h-[440px] lg:h-[500px] rounded-sm overflow-hidden border border-primary/40 shadow-[0_20px_50px_rgba(0,0,0,0.6)] group">
+          <div className="relative w-full h-90 sm:h-110 lg:h-125 rounded-sm overflow-hidden border border-primary/40 shadow-[0_20px_50px_rgba(0,0,0,0.6)] group">
             <Image 
               src="/platinum-heights/hero_cover.jpg" 
               alt="Platinum Heights - Current Active Project by Team Arcon" 
               fill 
               className="object-cover transition-transform duration-1000 group-hover:scale-105" 
             />
-            <div className="absolute inset-0 bg-gradient-to-t from-[#030c29] via-transparent to-transparent opacity-80"></div>
+            <div className="absolute inset-0 bg-linear-to-t from-[#030c29] via-transparent to-transparent opacity-80"></div>
             
             <div className="absolute top-4 left-4 bg-primary text-[#071C51] font-label-caps text-[0.7rem] uppercase px-3 py-1 font-bold tracking-widest shadow-lg">
               CURRENT ACTIVE PROJECT
@@ -341,7 +341,7 @@ export default function Home() { return ( <div className="bg-background font-bod
 <div id="sale-slider" className="flex overflow-x-auto snap-x snap-mandatory gap-xl pb-sm" style={{ scrollbarWidth: 'none', msOverflowStyle: 'none' }}>
 
 {/* Platinum Heights - Current Active Project in Feed */}
-<div className="group bg-surface-container border-2 border-primary/60 hover:border-primary transition-all flex flex-col justify-between overflow-hidden shadow-2xl min-w-full md:min-w-[calc(50%-1rem)] lg:min-w-[calc(33.333%-1.33rem)] flex-shrink-0 snap-start relative">
+<div className="group bg-surface-container border-2 border-primary/60 hover:border-primary transition-all flex flex-col justify-between overflow-hidden shadow-2xl min-w-full md:min-w-[calc(50%-1rem)] lg:min-w-[calc(33.333%-1.33rem)] shrink-0 snap-start relative">
   <div className="relative h-64 overflow-hidden bg-surface-container-highest">
     <div 
       className="w-full h-full bg-cover bg-center transition-transform duration-700 ease-out group-hover:scale-105" 
@@ -354,7 +354,7 @@ export default function Home() { return ( <div className="bg-background font-bod
       Team Arcon
     </div>
   </div>
-  <div className="p-lg flex flex-col flex-grow justify-between">
+  <div className="p-lg flex flex-col grow justify-between">
     <div>
       <div className="flex items-center gap-xs text-primary mb-xs">
         <span className="material-symbols-outlined text-[1.1rem]">apartment</span>
@@ -407,7 +407,7 @@ export default function Home() { return ( <div className="bg-background font-bod
 </div>
 
 {/* AG G+4 Residences - New Launch by AG Development */}
-<div className="group bg-surface-container border border-outline-variant/40 hover:border-primary transition-all flex flex-col justify-between overflow-hidden shadow-xl min-w-full md:min-w-[calc(50%-1rem)] lg:min-w-[calc(33.333%-1.33rem)] flex-shrink-0 snap-start relative">
+<div className="group bg-surface-container border border-outline-variant/40 hover:border-primary transition-all flex flex-col justify-between overflow-hidden shadow-xl min-w-full md:min-w-[calc(50%-1rem)] lg:min-w-[calc(33.333%-1.33rem)] shrink-0 snap-start relative">
   <div className="relative h-64 overflow-hidden bg-surface-container-highest">
     <div 
       className="w-full h-full bg-cover bg-center transition-transform duration-700 ease-out group-hover:scale-105" 
@@ -420,7 +420,7 @@ export default function Home() { return ( <div className="bg-background font-bod
       AG Development
     </div>
   </div>
-  <div className="p-lg flex flex-col flex-grow justify-between">
+  <div className="p-lg flex flex-col grow justify-between">
     <div>
       <div className="flex items-center gap-xs text-primary mb-xs">
         <span className="material-symbols-outlined text-[1.1rem]">deck</span>
@@ -475,7 +475,7 @@ export default function Home() { return ( <div className="bg-background font-bod
 </div>
 </section></FadeIn>
 
-<FadeIn><section className="relative w-full min-h-[560px] flex items-center bg-surface-container-lowest overflow-hidden">
+<FadeIn><section className="relative w-full min-h-140 flex items-center bg-surface-container-lowest overflow-hidden">
 
 <div className="absolute top-6 left-1/2 -translate-x-1/2 font-headline-xl text-[5.5rem] md:text-[9rem] lg:text-[12rem] font-extrabold uppercase text-surface-container-highest/10 pointer-events-none select-none whitespace-nowrap">
       ABOUT TRUELINE • AWARDS
@@ -483,9 +483,9 @@ export default function Home() { return ( <div className="bg-background font-bod
 
 <div className="absolute inset-0 bg-cover bg-right md:bg-center opacity-50 mix-blend-luminosity" data-alt="Photorealistic, cinematic, wide-angle shot of an ultra-luxury modern corporate real estate office" style={{ backgroundImage: 'url("/corporate_background.jpg")' }}>
 </div>
-<div className="absolute inset-0 bg-gradient-to-r from-background via-background/95 to-transparent"></div>
+<div className="absolute inset-0 bg-linear-to-r from-background via-background/95 to-transparent"></div>
 <div className="relative z-10 max-w-[1600px] w-full mx-auto px-margin-mobile md:px-margin-tablet lg:px-margin-desktop py-4xl">
-<div className="max-w-[36rem] bg-surface-container/70 border border-primary/20 backdrop-blur-xl p-xl md:p-2xl">
+<div className="max-w-144 bg-surface-container/70 border border-primary/20 backdrop-blur-xl p-xl md:p-2xl">
 <span className="font-label-caps text-label-caps uppercase tracking-[0.25em] text-primary block mb-xs">Institutional Authority</span>
 <h2 className="font-headline-lg text-headline-lg uppercase font-bold text-on-surface mb-md">
           WHO <span className="text-primary">WE ARE</span>
@@ -537,7 +537,7 @@ export default function Home() { return ( <div className="bg-background font-bod
   <div className="flex shrink-0 animate-[marquee_30s_linear_infinite] gap-xl pr-xl">
     
 
-<div className="w-[350px] md:w-[450px] shrink-0 p-xl bg-surface-container border border-outline-variant/30 hover:border-primary/50 transition-all flex flex-col justify-between">
+<div className="w-87.5 md:w-112.5 shrink-0 p-xl bg-surface-container border border-outline-variant/30 hover:border-primary/50 transition-all flex flex-col justify-between">
 <div>
 <div className="flex items-center gap-xxs text-primary mb-md">
 <span className="material-symbols-outlined text-[1rem]" style={{ fontVariationSettings: "'FILL' 1" }}>star</span>
@@ -556,7 +556,7 @@ export default function Home() { return ( <div className="bg-background font-bod
           </div>
 </div>
 
-<div className="w-[350px] md:w-[450px] shrink-0 p-xl bg-surface-container border border-primary/40 shadow-xl flex flex-col justify-between relative">
+<div className="w-87.5 md:w-112.5 shrink-0 p-xl bg-surface-container border border-primary/40 shadow-xl flex flex-col justify-between relative">
 <div className="absolute -top-3 right-6 px-sm py-xxs bg-primary text-on-primary font-label-caps text-[0.65rem] uppercase font-bold tracking-widest">
             Institutional Trust
           </div>
@@ -578,7 +578,7 @@ export default function Home() { return ( <div className="bg-background font-bod
           </div>
 </div>
 
-<div className="w-[350px] md:w-[450px] shrink-0 p-xl bg-surface-container border border-outline-variant/30 hover:border-primary/50 transition-all flex flex-col justify-between">
+<div className="w-87.5 md:w-112.5 shrink-0 p-xl bg-surface-container border border-outline-variant/30 hover:border-primary/50 transition-all flex flex-col justify-between">
 <div>
 <div className="flex items-center gap-xxs text-primary mb-md">
 <span className="material-symbols-outlined text-[1rem]" style={{ fontVariationSettings: "'FILL' 1" }}>star</span>
@@ -601,7 +601,7 @@ export default function Home() { return ( <div className="bg-background font-bod
   <div className="flex shrink-0 animate-[marquee_30s_linear_infinite] gap-xl pr-xl absolute top-0 left-full">
     
 
-<div className="w-[350px] md:w-[450px] shrink-0 p-xl bg-surface-container border border-outline-variant/30 hover:border-primary/50 transition-all flex flex-col justify-between">
+<div className="w-87.5 md:w-112.5 shrink-0 p-xl bg-surface-container border border-outline-variant/30 hover:border-primary/50 transition-all flex flex-col justify-between">
 <div>
 <div className="flex items-center gap-xxs text-primary mb-md">
 <span className="material-symbols-outlined text-[1rem]" style={{ fontVariationSettings: "'FILL' 1" }}>star</span>
@@ -620,7 +620,7 @@ export default function Home() { return ( <div className="bg-background font-bod
           </div>
 </div>
 
-<div className="w-[350px] md:w-[450px] shrink-0 p-xl bg-surface-container border border-primary/40 shadow-xl flex flex-col justify-between relative">
+<div className="w-87.5 md:w-112.5 shrink-0 p-xl bg-surface-container border border-primary/40 shadow-xl flex flex-col justify-between relative">
 <div className="absolute -top-3 right-6 px-sm py-xxs bg-primary text-on-primary font-label-caps text-[0.65rem] uppercase font-bold tracking-widest">
             Institutional Trust
           </div>
@@ -642,7 +642,7 @@ export default function Home() { return ( <div className="bg-background font-bod
           </div>
 </div>
 
-<div className="w-[350px] md:w-[450px] shrink-0 p-xl bg-surface-container border border-outline-variant/30 hover:border-primary/50 transition-all flex flex-col justify-between">
+<div className="w-87.5 md:w-112.5 shrink-0 p-xl bg-surface-container border border-outline-variant/30 hover:border-primary/50 transition-all flex flex-col justify-between">
 <div>
 <div className="flex items-center gap-xxs text-primary mb-md">
 <span className="material-symbols-outlined text-[1rem]" style={{ fontVariationSettings: "'FILL' 1" }}>star</span>
@@ -672,7 +672,7 @@ export default function Home() { return ( <div className="bg-background font-bod
 <div className="absolute top-4 right-1/4 font-headline-xl text-[4rem] md:text-[11rem] lg:text-[14rem] font-extrabold uppercase text-surface-container-highest/15 pointer-events-none select-none whitespace-nowrap">
       FAQ
     </div>
-<div className="relative z-10 max-w-[1200px] mx-auto px-margin-mobile md:px-margin-tablet lg:px-margin-desktop">
+<div className="relative z-10 max-w-300 mx-auto px-margin-mobile md:px-margin-tablet lg:px-margin-desktop">
 <div className="mb-2xl">
 <h2 className="font-headline-lg text-headline-lg uppercase font-bold text-on-surface">
           ASK ANYTHING <span className="text-primary">FROM US</span>

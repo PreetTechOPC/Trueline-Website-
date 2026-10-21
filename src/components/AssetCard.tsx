@@ -43,7 +43,7 @@ export function AssetCard({
         )}
       </div>
       
-      <div className="p-lg flex flex-col flex-grow justify-between">
+      <div className="p-lg flex flex-col grow justify-between">
         <div>
           <div className="flex items-center gap-xs text-[#D8AA36] mb-xs">
             <span className="material-symbols-outlined text-[1.1rem]">{type}</span>

@@ -13,7 +13,7 @@ export default function ContactPage() {
             <h1 className="font-display text-[2.5rem] md:text-[3.75rem] lg:text-[4.25rem] font-bold text-on-surface leading-tight">
               Dubai Global <span className="text-primary">Headquarters</span>
             </h1>
-            <p className="font-body-lg text-[1.05rem] text-on-surface-variant max-w-[42rem] mt-4 leading-relaxed">
+            <p className="font-body-lg text-[1.05rem] text-on-surface-variant max-w-168 mt-4 leading-relaxed">
               Operating from the Dubai International Financial Centre (DIFC), Trueline orchestrates high-value transactions, developer mandates, and private wealth advisory across the UAE.
             </p>
           </div>
@@ -128,7 +128,7 @@ export default function ContactPage() {
               <h2 className="font-headline-lg text-[2rem] md:text-[2.5rem] uppercase font-bold text-on-surface mb-lg">
                 DIRECT <span className="font-semibold text-primary">CONCIERGE</span>
               </h2>
-              <p className="font-body-md text-body-md text-on-surface-variant mb-2xl max-w-[32rem]">
+              <p className="font-body-md text-body-md text-on-surface-variant mb-2xl max-w-128">
                 For immediate assistance regarding bespoke property acquisition, portfolio management, or off-market access, please connect directly with our Sovereign Desk.
               </p>
               
@@ -169,27 +169,27 @@ export default function ContactPage() {
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-lg">
                   <div className="flex flex-col gap-xs">
                     <label className="font-label-caps text-[0.65rem] uppercase tracking-widest text-on-surface-variant">First Name</label>
-                    <input type="text" className="bg-background border-b border-outline-variant/50 px-sm py-sm text-on-surface focus:outline-none focus:border-primary transition-colors" />
+                    <input type="text" className="bg-background border-b border-outline-variant/50 px-sm py-sm text-on-surface focus:outline-none focus:border-b-primary transition-colors" />
                   </div>
                   <div className="flex flex-col gap-xs">
                     <label className="font-label-caps text-[0.65rem] uppercase tracking-widest text-on-surface-variant">Last Name</label>
-                    <input type="text" className="bg-background border-b border-outline-variant/50 px-sm py-sm text-on-surface focus:outline-none focus:border-primary transition-colors" />
+                    <input type="text" className="bg-background border-b border-outline-variant/50 px-sm py-sm text-on-surface focus:outline-none focus:border-b-primary transition-colors" />
                   </div>
                 </div>
 
                 <div className="flex flex-col gap-xs">
                   <label className="font-label-caps text-[0.65rem] uppercase tracking-widest text-on-surface-variant">Email Address</label>
-                  <input type="email" className="bg-background border-b border-outline-variant/50 px-sm py-sm text-on-surface focus:outline-none focus:border-primary transition-colors" />
+                  <input type="email" className="bg-background border-b border-outline-variant/50 px-sm py-sm text-on-surface focus:outline-none focus:border-b-primary transition-colors" />
                 </div>
 
                 <div className="flex flex-col gap-xs">
                   <label className="font-label-caps text-[0.65rem] uppercase tracking-widest text-on-surface-variant">Phone Number (Optional)</label>
-                  <input type="tel" className="bg-background border-b border-outline-variant/50 px-sm py-sm text-on-surface focus:outline-none focus:border-primary transition-colors" />
+                  <input type="tel" className="bg-background border-b border-outline-variant/50 px-sm py-sm text-on-surface focus:outline-none focus:border-b-primary transition-colors" />
                 </div>
                 
                 <div className="flex flex-col gap-xs">
                   <label className="font-label-caps text-[0.65rem] uppercase tracking-widest text-on-surface-variant">Inquiry Type</label>
-                  <select defaultValue="" className="bg-background border-b border-outline-variant/50 px-sm py-sm text-on-surface focus:outline-none focus:border-primary transition-colors appearance-none">
+                  <select defaultValue="" className="bg-background border-b border-outline-variant/50 px-sm py-sm text-on-surface focus:outline-none focus:border-b-primary transition-colors appearance-none">
                     <option value="" disabled>Select inquiry type</option>
                     <option value="developer-lineup">Developer Lineup</option>
                     <option value="off-market">Off-Market Acquisition</option>
@@ -199,7 +199,7 @@ export default function ContactPage() {
 
                 <div className="flex flex-col gap-xs">
                   <label className="font-label-caps text-[0.65rem] uppercase tracking-widest text-on-surface-variant">Capital Allocation</label>
-                  <select defaultValue="" className="bg-background border-b border-outline-variant/50 px-sm py-sm text-on-surface focus:outline-none focus:border-primary transition-colors appearance-none">
+                  <select defaultValue="" className="bg-background border-b border-outline-variant/50 px-sm py-sm text-on-surface focus:outline-none focus:border-b-primary transition-colors appearance-none">
                     <option value="" disabled>Select tier</option>
                     <option value="2m-5m">AED 2M-5M</option>
                     <option value="5m-15m">AED 5M-15M</option>

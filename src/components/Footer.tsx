@@ -8,7 +8,7 @@ export default function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-2xl mb-4xl">
           <div className="lg:col-span-1">
             <Image src="/Trueline.png" alt="Trueline Real Estate" width={300} height={100} className="h-24 w-auto object-contain mb-md" />
-            <p className="font-body-sm text-body-sm text-on-surface-variant max-w-[20rem]">
+            <p className="font-body-sm text-body-sm text-on-surface-variant max-w-80">
               Sovereign advisory, institutional acquisition, and prime global residential assets.
             </p>
           </div>

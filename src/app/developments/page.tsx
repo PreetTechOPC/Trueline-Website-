@@ -63,7 +63,7 @@ export default function DevelopmentsPage() {
               Signature Developments & <br className="hidden md:block"/>
               <span className="text-primary">Strategic Alliances</span>
             </h1>
-            <p className="font-body-lg text-[1.1rem] text-on-surface-variant leading-relaxed max-w-[42rem]">
+            <p className="font-body-lg text-[1.1rem] text-on-surface-variant leading-relaxed max-w-168">
               Access premier off-plan launches, bespoke sky villas and institutional residential communities curated alongside our official development partners.
             </p>
           </div>
@@ -112,13 +112,13 @@ export default function DevelopmentsPage() {
       <FadeIn>
         <section className="w-full bg-[#030c29] border-b border-primary/20 py-12 md:py-16">
           <div className="max-w-[1600px] mx-auto px-margin-mobile md:px-margin-tablet lg:px-margin-desktop">
-            <div className="bg-gradient-to-r from-[#071C51] to-[#040e2b] border border-primary/40 rounded-sm p-6 md:p-10 shadow-2xl relative overflow-hidden">
+            <div className="bg-linear-to-r from-[#071C51] to-[#040e2b] border border-primary/40 rounded-sm p-6 md:p-10 shadow-2xl relative overflow-hidden">
               <div className="absolute top-0 right-0 w-96 h-96 bg-primary/5 rounded-full blur-3xl pointer-events-none"></div>
               
               <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
                 
                 {/* Visual */}
-                <div className="lg:col-span-5 relative h-[260px] md:h-[340px] rounded-sm overflow-hidden border border-primary/30 group">
+                <div className="lg:col-span-5 relative h-65 md:h-85 rounded-sm overflow-hidden border border-primary/30 group">
                   <Image 
                     src="/platinum-heights/hero_cover.jpg" 
                     alt="Platinum Heights - Current Active Project" 
@@ -229,10 +229,10 @@ export default function DevelopmentsPage() {
                   className={`bg-white border transition-all flex flex-col p-4 rounded-sm ${
                     dev.isCurrentActive 
                       ? "border-primary shadow-lg ring-2 ring-primary/30" 
-                      : "border-[#D9D9D7] shadow-sm hover:shadow-xl"
+                      : "border-on-surface-variant shadow-sm hover:shadow-xl"
                   }`}
                 >
-                  <div className="relative w-full h-[260px] bg-[#E0E0DE] mb-6 rounded-sm border border-[#D9D9D7] overflow-hidden group">
+                  <div className="relative w-full h-65 bg-[#E0E0DE] mb-6 rounded-sm border border-on-surface-variant overflow-hidden group">
                     <Image 
                       src={dev.image} 
                       alt={dev.title} 
@@ -250,7 +250,7 @@ export default function DevelopmentsPage() {
                     )}
                   </div>
 
-                  <div className="flex flex-col flex-grow px-2 pb-2">
+                  <div className="flex flex-col grow px-2 pb-2">
                     <div className="flex items-center justify-between mb-1">
                       <span className="text-[0.7rem] uppercase tracking-widest font-bold text-primary font-label-caps">
                         {dev.developer}
@@ -272,7 +272,7 @@ export default function DevelopmentsPage() {
                       {dev.description}
                     </p>
                     
-                    <div className="mt-auto pt-4 border-t border-[#D9D9D7]/60">
+                    <div className="mt-auto pt-4 border-t border-on-surface-variant/60">
                       <p className="font-label-sm text-[0.9rem] text-[#071C51] font-bold mb-4">
                         {dev.price}
                       </p>

@@ -6,15 +6,15 @@ export default function AdvisoryPage() {
     <main className="w-full pt-20 bg-background flex flex-col min-h-screen">
       
       {/* 1. Corporate Hero Section */}
-      <FadeIn><section className="relative w-full h-[75vh] min-h-[600px] flex items-center justify-center bg-surface-container-highest overflow-hidden">
+      <FadeIn><section className="relative w-full h-[75vh] min-h-150 flex items-center justify-center bg-surface-container-highest overflow-hidden">
         <div className="absolute inset-0 bg-cover bg-center opacity-40 mix-blend-luminosity" style={{ backgroundImage: 'url("/corporate_background.jpg")' }}></div>
-        <div className="absolute inset-0 bg-gradient-to-t from-background via-background/60 to-transparent z-10"></div>
-        <div className="relative z-20 text-center px-margin-mobile w-full max-w-[1200px]">
+        <div className="absolute inset-0 bg-linear-to-t from-background via-background/60 to-transparent z-10"></div>
+        <div className="relative z-20 text-center px-margin-mobile w-full max-w-300">
           <span className="font-label-caps text-label-caps uppercase tracking-[0.25em] text-primary block mb-md shadow-black drop-shadow-md">Market Intelligence</span>
           <h1 className="font-headline-xl text-[2.5rem] md:text-[6rem] uppercase font-bold text-on-surface shadow-black drop-shadow-2xl">
             ADVISORY
           </h1>
-          <p className="font-body-lg text-body-lg text-white max-w-[42rem] mx-auto mt-lg shadow-black drop-shadow-lg font-medium">
+          <p className="font-body-lg text-body-lg text-white max-w-168 mx-auto mt-lg shadow-black drop-shadow-lg font-medium">
             Institutional-grade acquisition strategy, valuation modeling, and global market research for the world&apos;s most discerning investors.
           </p>
         </div>
@@ -79,8 +79,8 @@ export default function AdvisoryPage() {
       {/* 3. Market Intelligence & Analytics */}
       <FadeIn><section className="w-full py-4xl bg-surface-container border-y border-outline-variant/20 relative overflow-hidden">
         <div className="absolute top-0 right-0 w-1/2 h-full opacity-5 pointer-events-none">
-          <div className="w-full h-full border-[1px] border-primary rounded-full scale-150 translate-x-1/4 -translate-y-1/4"></div>
-          <div className="w-full h-full border-[1px] border-primary rounded-full scale-110 translate-x-1/4 -translate-y-1/4 absolute top-0"></div>
+          <div className="w-full h-full border border-primary rounded-full scale-150 translate-x-1/4 -translate-y-1/4"></div>
+          <div className="w-full h-full border border-primary rounded-full scale-110 translate-x-1/4 -translate-y-1/4 absolute top-0"></div>
         </div>
         
         <div className="max-w-[1600px] mx-auto px-margin-mobile md:px-margin-tablet lg:px-margin-desktop relative z-10">
@@ -91,7 +91,7 @@ export default function AdvisoryPage() {
               <h2 className="font-headline-lg text-headline-lg uppercase font-semibold text-on-surface mb-lg">
                 DATA-DRIVEN <span className="text-primary">DECISIONS</span>
               </h2>
-              <p className="font-body-md text-body-md text-on-surface-variant leading-relaxed mb-xl max-w-[32rem]">
+              <p className="font-body-md text-body-md text-on-surface-variant leading-relaxed mb-xl max-w-128">
                 Our proprietary market intelligence aggregates macroeconomic indicators, granular localized transactional data, and predictive yield modeling to ensure our clients execute acquisitions ahead of the market curve.
               </p>
               <Link href="/contact" className="inline-flex bg-transparent border border-primary text-primary hover:bg-primary hover:text-on-primary font-label-caps text-label-caps uppercase px-lg py-sm font-semibold tracking-widest transition-all items-center justify-center gap-xs">
@@ -129,7 +129,7 @@ export default function AdvisoryPage() {
         <h2 className="font-headline-lg text-headline-lg uppercase font-semibold text-on-surface mb-md">
           INITIATE A <span className="text-primary">RELATIONSHIP</span>
         </h2>
-        <p className="font-body-md text-body-md text-on-surface-variant max-w-[32rem] mb-xl">
+        <p className="font-body-md text-body-md text-on-surface-variant max-w-128 mb-xl">
           Engage with our Sovereign Desk for a confidential consultation regarding your real estate acquisition, divestment, or portfolio structuring requirements.
         </p>
         <Link href="/contact" className="inline-flex bg-primary text-on-primary font-label-caps text-label-caps uppercase px-2xl py-md font-semibold tracking-widest hover:bg-primary-fixed-dim transition-all items-center justify-center gap-sm shadow-xl active:scale-95">

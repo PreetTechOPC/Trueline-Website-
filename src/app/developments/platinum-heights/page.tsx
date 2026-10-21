@@ -135,8 +135,8 @@ export default function PlatinumHeightsPage() {
       
       {/* 1. HERO SPOTLIGHT */}
       <FadeIn>
-        <section className="relative w-full pt-28 pb-16 lg:pt-36 lg:pb-24 overflow-hidden border-b border-primary/20 bg-gradient-to-b from-[#030c29] via-[#07122e] to-[#040e2b]">
-          <div className="absolute inset-0 opacity-20 pointer-events-none bg-[radial-gradient(ellipse_at_top,_var(--tw-gradient-stops))] from-primary/30 via-transparent to-transparent"></div>
+        <section className="relative w-full pt-28 pb-16 lg:pt-36 lg:pb-24 overflow-hidden border-b border-primary/20 bg-linear-to-b from-[#030c29] via-[#07122e] to-[#040e2b]">
+          <div className="absolute inset-0 opacity-20 pointer-events-none bg-[radial-gradient(ellipse_at_top,var(--tw-gradient-stops))] from-primary/30 via-transparent to-transparent"></div>
           
           <div className="relative z-10 max-w-[1600px] mx-auto px-margin-mobile md:px-margin-tablet lg:px-margin-desktop">
             
@@ -170,7 +170,7 @@ export default function PlatinumHeightsPage() {
                   Platinum Heights <br />
                   <span className="text-primary font-light italic text-[2.25rem] md:text-[3.25rem] lg:text-[3.75rem]">By Team Arcon</span>
                 </h1>
-                <p className="font-body-lg text-[1.1rem] text-on-surface-variant leading-relaxed max-w-[42rem] mb-8">
+                <p className="font-body-lg text-[1.1rem] text-on-surface-variant leading-relaxed max-w-168 mb-8">
                   Rising 32 storeys (approx. 122.75 M) above the vibrant cityscape of Ajman, Platinum Heights redefines contemporary urban living. Featuring climate-responsive perforated facades, an elevated sky jogging track at +24.05m, rooftop infinity pool, and semi-furnished residences powered by Arcon Connect smart automation.
                 </p>
 
@@ -233,7 +233,7 @@ export default function PlatinumHeightsPage() {
 
               {/* Right Hero Image Card */}
               <div className="lg:col-span-5 relative">
-                <div className="relative w-full h-[480px] lg:h-[580px] rounded-sm overflow-hidden border border-primary/30 shadow-2xl group">
+                <div className="relative w-full h-120 lg:h-145 rounded-sm overflow-hidden border border-primary/30 shadow-2xl group">
                   <Image 
                     src="/platinum-heights/hero_cover.jpg" 
                     alt="Platinum Heights Tower Ajman by Team Arcon" 
@@ -241,7 +241,7 @@ export default function PlatinumHeightsPage() {
                     priority
                     className="object-cover transition-transform duration-1000 group-hover:scale-105" 
                   />
-                  <div className="absolute inset-0 bg-gradient-to-t from-[#040e2b] via-transparent to-transparent opacity-80"></div>
+                  <div className="absolute inset-0 bg-linear-to-t from-[#040e2b] via-transparent to-transparent opacity-80"></div>
                   
                   <div className="absolute top-4 left-4 bg-surface-container-lowest/90 border border-primary/40 px-3 py-1.5 backdrop-blur-md">
                     <span className="font-label-caps text-[0.65rem] uppercase tracking-widest text-primary font-bold">
@@ -271,7 +271,7 @@ export default function PlatinumHeightsPage() {
         <section className="w-full py-20 bg-surface-container-low border-b border-outline/20">
           <div className="max-w-[1600px] mx-auto px-margin-mobile md:px-margin-tablet lg:px-margin-desktop">
             
-            <div className="text-center max-w-[48rem] mx-auto mb-16">
+            <div className="text-center max-w-192 mx-auto mb-16">
               <span className="font-label-caps text-label-caps uppercase tracking-[0.25em] text-primary font-semibold block mb-3">
                 ARCHITECTURAL SPECIFICATIONS
               </span>
@@ -401,7 +401,7 @@ export default function PlatinumHeightsPage() {
                   Floor Plans & <span className="text-primary">Unit Layouts</span>
                 </h2>
               </div>
-              <p className="font-body-md text-on-surface-variant max-w-[36rem]">
+              <p className="font-body-md text-on-surface-variant max-w-144">
                 Choose from five distinctive typologies, from efficient 1-bedroom apartments up to monumental 3-storey sky triplexes equipped with private elevators.
               </p>
             </div>
@@ -493,7 +493,7 @@ export default function PlatinumHeightsPage() {
                   <span className="font-label-caps text-[0.7rem] uppercase tracking-widest text-on-surface-variant mb-2 font-semibold">
                     Architectural Layout Plan
                   </span>
-                  <div className="relative w-full h-[320px] md:h-[400px] bg-white rounded-sm overflow-hidden border border-outline/30 flex items-center justify-center p-2 group">
+                  <div className="relative w-full h-80 md:h-100 bg-white rounded-sm overflow-hidden border border-outline/30 flex items-center justify-center p-2 group">
                     <Image 
                       src={selectedUnit.floorplan} 
                       alt={`${selectedUnit.title} Floor Plan`} 
@@ -508,7 +508,7 @@ export default function PlatinumHeightsPage() {
                   <span className="font-label-caps text-[0.7rem] uppercase tracking-widest text-on-surface-variant mb-2 font-semibold">
                     Interior Concept Render
                   </span>
-                  <div className="relative w-full h-[320px] md:h-[400px] rounded-sm overflow-hidden border border-outline/30 group">
+                  <div className="relative w-full h-80 md:h-100 rounded-sm overflow-hidden border border-outline/30 group">
                     <Image 
                       src={selectedUnit.interior} 
                       alt={`${selectedUnit.title} Interior`} 
@@ -531,7 +531,7 @@ export default function PlatinumHeightsPage() {
         <section className="w-full py-24 bg-surface-container-low border-b border-outline/20">
           <div className="max-w-[1600px] mx-auto px-margin-mobile md:px-margin-tablet lg:px-margin-desktop">
             
-            <div className="text-center max-w-[48rem] mx-auto mb-16">
+            <div className="text-center max-w-192 mx-auto mb-16">
               <span className="font-label-caps text-label-caps uppercase tracking-[0.25em] text-primary font-semibold block mb-3">
                 WORLD-CLASS RESIDENTIAL LIVING
               </span>
@@ -546,14 +546,14 @@ export default function PlatinumHeightsPage() {
             {/* Special Highlight: Sky Jogging Track & Rooftop Pool */}
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-14">
               
-              <div className="relative h-[380px] rounded-sm overflow-hidden border border-primary/30 group">
+              <div className="relative h-95 rounded-sm overflow-hidden border border-primary/30 group">
                 <Image 
                   src="/platinum-heights/sky_jogging_track.jpg" 
                   alt="Sky Jogging Track at Platinum Heights" 
                   fill 
                   className="object-cover transition-transform duration-700 group-hover:scale-105" 
                 />
-                <div className="absolute inset-0 bg-gradient-to-t from-[#040e2b] via-[#040e2b]/40 to-transparent"></div>
+                <div className="absolute inset-0 bg-linear-to-t from-[#040e2b] via-[#040e2b]/40 to-transparent"></div>
                 <div className="absolute bottom-6 left-6 right-6">
                   <span className="px-3 py-1 bg-primary text-on-primary font-label-caps text-[0.65rem] uppercase font-bold tracking-widest inline-block mb-2">
                     Level +24.05m Feature
@@ -567,14 +567,14 @@ export default function PlatinumHeightsPage() {
                 </div>
               </div>
 
-              <div className="relative h-[380px] rounded-sm overflow-hidden border border-primary/30 group">
+              <div className="relative h-95 rounded-sm overflow-hidden border border-primary/30 group">
                 <Image 
                   src="/platinum-heights/swimming_pool.jpg" 
                   alt="Rooftop Swimming Pool at Platinum Heights" 
                   fill 
                   className="object-cover transition-transform duration-700 group-hover:scale-105" 
                 />
-                <div className="absolute inset-0 bg-gradient-to-t from-[#040e2b] via-[#040e2b]/40 to-transparent"></div>
+                <div className="absolute inset-0 bg-linear-to-t from-[#040e2b] via-[#040e2b]/40 to-transparent"></div>
                 <div className="absolute bottom-6 left-6 right-6">
                   <span className="px-3 py-1 bg-primary text-on-primary font-label-caps text-[0.65rem] uppercase font-bold tracking-widest inline-block mb-2">
                     Rooftop Crown
@@ -677,7 +677,7 @@ export default function PlatinumHeightsPage() {
                 </div>
               </div>
 
-              <div className="lg:col-span-6 relative h-[450px] lg:h-[520px] rounded-sm overflow-hidden border border-primary/30">
+              <div className="lg:col-span-6 relative h-112.5 lg:h-130 rounded-sm overflow-hidden border border-primary/30">
                 <Image 
                   src="/platinum-heights/arcon_connect.jpg" 
                   alt="Arcon Connect Smart Home Features" 
@@ -726,14 +726,14 @@ export default function PlatinumHeightsPage() {
             </div>
 
             {/* Active Image Spotlight Preview */}
-            <div className="relative w-full h-[360px] md:h-[540px] rounded-sm overflow-hidden border border-primary/30 mb-6 shadow-2xl">
+            <div className="relative w-full h-90 md:h-135 rounded-sm overflow-hidden border border-primary/30 mb-6 shadow-2xl">
               <Image 
                 src={activeGalleryImage.src} 
                 alt={activeGalleryImage.label} 
                 fill 
                 className="object-cover transition-all duration-700" 
               />
-              <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent"></div>
+              <div className="absolute inset-0 bg-linear-to-t from-black/80 via-transparent to-transparent"></div>
               <div className="absolute bottom-6 left-6 right-6 flex items-center justify-between">
                 <div>
                   <span className="font-label-caps text-[0.7rem] uppercase tracking-widest text-primary font-bold block mb-1">
@@ -820,7 +820,7 @@ export default function PlatinumHeightsPage() {
                 </div>
               </div>
 
-              <div className="lg:col-span-7 relative h-[450px] lg:h-[550px] rounded-sm overflow-hidden border border-primary/30 shadow-2xl">
+              <div className="lg:col-span-7 relative h-112.5 lg:h-137.5 rounded-sm overflow-hidden border border-primary/30 shadow-2xl">
                 <Image 
                   src="/platinum-heights/location_map.jpg" 
                   alt="Platinum Heights Location Map Emirates City" 
@@ -837,8 +837,8 @@ export default function PlatinumHeightsPage() {
 
       {/* 8. DEVELOPER PARTNERSHIP & CALL TO ACTION */}
       <FadeIn>
-        <section className="w-full py-24 bg-gradient-to-b from-[#07122e] to-[#030c29] text-center">
-          <div className="max-w-[1000px] mx-auto px-margin-mobile md:px-margin-tablet">
+        <section className="w-full py-24 bg-linear-to-b from-[#07122e] to-[#030c29] text-center">
+          <div className="max-w-250 mx-auto px-margin-mobile md:px-margin-tablet">
             
             <span className="font-label-caps text-label-caps uppercase tracking-[0.3em] text-primary font-bold block mb-4">
               DEVELOPER MANDATE • TEAM ARCON
@@ -849,7 +849,7 @@ export default function PlatinumHeightsPage() {
               <span className="text-primary">Platinum Heights</span>
             </h2>
 
-            <p className="font-body-lg text-on-surface-variant max-w-[42rem] mx-auto leading-relaxed mb-10">
+            <p className="font-body-lg text-on-surface-variant max-w-168 mx-auto leading-relaxed mb-10">
               Trueline Real Estate is proud to represent Team Arcon for this landmark launch. Contact our Sovereign Client Desk today for preferential pricing, payment schedule matrices, and confidential unit reservations.
             </p>
 

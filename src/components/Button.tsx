@@ -20,7 +20,7 @@ export function Button({ variant = 'primary', className = '', children, ...props
     return (
       <button className={`${baseClasses} ${variants.text} ${className}`} {...props}>
         {children}
-        <span className="absolute bottom-0 left-0 w-full h-[1px] bg-[#D8AA36] origin-left scale-x-100 group-hover:scale-x-105 transition-transform duration-300"></span>
+        <span className="absolute bottom-0 left-0 w-full h-px bg-[#D8AA36] origin-left scale-x-100 group-hover:scale-x-105 transition-transform duration-300"></span>
       </button>
     );
   }
