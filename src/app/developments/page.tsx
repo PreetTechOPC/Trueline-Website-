@@ -10,7 +10,7 @@ const developmentsList = [
     id: "platinum-heights",
     title: "Platinum Heights",
     developer: "Team Arcon",
-    tag: "Arcon Lineup",
+    tag: "Platinum Heights",
     badge: "CURRENT ACTIVE PROJECT",
     isCurrentActive: true,
     image: "/platinum-heights/hero_cover.jpg",
@@ -44,7 +44,7 @@ export default function DevelopmentsPage() {
   const filteredDevelopments = activeFilter === "All"
     ? developmentsList
     : developmentsList.filter(d => {
-        if (activeFilter === "Arcon Lineup") return d.tag === "Arcon Lineup";
+        if (activeFilter === "Platinum Heights") return d.tag === "Platinum Heights";
         if (activeFilter === "AG Developers") return d.tag === "AG Developers";
         return true;
       });
@@ -85,14 +85,14 @@ export default function DevelopmentsPage() {
               All Developments ({developmentsList.length})
             </button>
             <button 
-              onClick={() => setActiveFilter("Arcon Lineup")}
+              onClick={() => setActiveFilter("Platinum Heights")}
               className={`font-label-caps text-[0.8rem] uppercase tracking-widest font-semibold px-6 py-3 rounded-md transition-colors whitespace-nowrap ${
-                activeFilter === "Arcon Lineup"
+                activeFilter === "Platinum Heights"
                   ? "bg-primary text-[#071C51] font-bold"
                   : "text-on-surface-variant hover:text-on-surface hover:bg-white/5"
               }`}
             >
-              Arcon Lineup ({developmentsList.filter(d => d.tag === "Arcon Lineup").length})
+              Platinum Heights ({developmentsList.filter(d => d.tag === "Platinum Heights").length})
             </button>
             <button 
               onClick={() => setActiveFilter("AG Developers")}
